@@ -108,8 +108,8 @@
 					.addTo(controller);
 
 	var tween2 = new TimelineMax()
-		.add(TweenMax.to($line4, 7, {strokeDashoffset: 0, ease:Linear.easeNone}),1)
-		.add(TweenMax.to($line3, 4, {strokeDashoffset: 0, ease:Linear.easeNone}),1);
+		.add(TweenMax.to($line4, 0.1, {strokeDashoffset: 0, ease:Linear.easeNone}))
+		.add(TweenMax.to($line3, 0.1, {strokeDashoffset: 0, ease:Linear.easeNone}));
 
 	var scene = new ScrollMagic.Scene({triggerElement: $hc2, duration: 700, offset: 1000})
 					.setTween(tween2)
