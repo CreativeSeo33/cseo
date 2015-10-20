@@ -1,0 +1,38 @@
+@import "variables";
+@import "mixins";
+@import "bootstrap";
+@import "footer";
+@import "../libs/font-awesome/css/font-awesome.min.css";
+
+
+.home_screen {
+	height: 100vh;
+	background-color: #DCDDDE;
+}
+.home_screen2 {
+	height: 100vh;
+	background-color: #DCDDDE;
+}
+.border {
+	border-right:1px solid #333;
+	height: 100px;
+}
+
+//NAVBAR
+
+nav {
+	background-color:transparent;
+	min-height:90px;
+	line-height:90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.logo {
+	padding: 0 20px;
+	font-weight:900;
+	font-size:24px;
+}
+
+//NAVBAR

@@ -1,0 +1,12 @@
+footer {
+	background-color:#000;
+	color: #fff;	
+	
+}
+.footer {
+	&_logo {
+		font-weight:900;
+		font-size:24px;
+		padding: 20px 0;
+	}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "cseo",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "latest",
+        "bootstrap-sass": "latest",
+        "font-awesome": "latest"
+    }
+}
