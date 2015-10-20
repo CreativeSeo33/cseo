@@ -7260,19 +7260,21 @@ footer {
 /* line 8, ../sass/style.scss */
 .home_screen {
   height: 100vh;
-  background-color: #DCDDDE; }
+  background-color: #DCDDDE;
+  width: 100%; }
 
-/* line 12, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 .home_screen2 {
   height: 100vh;
   background-color: #DCDDDE; }
 
-/* line 16, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .border {
   border-right: 1px solid #333;
-  height: 100px; }
+  height: 100px;
+  width: 100%; }
 
-/* line 23, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 nav {
   background-color: transparent;
   min-height: 90px;
@@ -7281,7 +7283,7 @@ nav {
   top: 0;
   left: 0; }
 
-/* line 32, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .logo {
   padding: 0 20px;
   font-weight: 900;
