@@ -7333,3 +7333,7 @@ nav {
 /* line 66, ../sass/style.scss */
 .svga:hover {
   text-decoration: none; }
+
+/* line 72, ../sass/style.scss */
+.team, .price, .port {
+  opacity: 0; }

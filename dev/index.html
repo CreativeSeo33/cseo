@@ -22,23 +22,39 @@
 	<g>
 	  <path class="st1" style="fill:none;stroke:#062131;stroke-width:2;stroke-miterlimit:10;" id="line" d="M1878,-100 -300,1461.7"/>
 	  <path class="st1" id="line2" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M1027.6,250.4 1383.2,606.1 791,1200"/>
-	 <line class="st3" x1="270" y1="600" x2="270" y2="1206.9"/>
-	 <line class="st3" x1="270" y1="850" x2="570" y2="850"/>
-	 <a class="svga" xlink:href="/"><text transform="matrix(1 0 0 1 300 750)" class="txt">КОМАНДА</text></a>
+	
+	 <a class="svga team" xlink:href="/"><text transform="matrix(1 0 0 1 300 750)" class="txt">КОМАНДА</text></a>	
 
-	 <line class="st3" x1="570" y1="390" x2="570" y2="1206.9"/>
-	 <line class="st3" x1="570" y1="750" x2="870" y2="750"/>
+	 <g class="price">
 	 <a class="svga" xlink:href="/"><text transform="matrix(1 0 0 1 620 520)" class="txt">ЦЕНЫ</text></a>
 	 <a class="svga" xlink:href="/"><text transform="matrix(1 0 0 1 620 580)" class="txta">Корпоративный сайт</text></a>
 	 <a class="svga" xlink:href="/"><text transform="matrix(1 0 0 1 620 620)" class="txta">Сайт визитка</text></a>
 	 <a class="svga" xlink:href="/"><text transform="matrix(1 0 0 1 620 660)" class="txta">Интернет-магазин</text></a>
 	 <a class="svga" xlink:href="/"><text transform="matrix(1 0 0 1 620 700)" class="txta">Landing page</text></a>
-
-	 <line class="st3" x1="870" y1="190" x2="870" y2="1206.9"/> 
-	 <a class="svga" xlink:href="/"><text transform="matrix(1 0 0 1 920 300)" class="txt">ПОРТФОЛИО</text></a>
-	 <line class="st3" x1="1170" y1="10" x2="1170" y2="1206.9"/>
-	 <line class="st3" x1="870" y1="450" x2="1170" y2="450"/>
 	 </g>
+
+
+	 <a class="svga port" xlink:href="/"><text transform="matrix(1 0 0 1 920 300)" class="txt">ПОРТФОЛИО</text></a>
+
+	 
+	 </g>
+		<g id="lines">
+		 <path id="l1" style="fill:none;stroke:#fff;stroke-width:0.3;stroke-miterlimit:10;" class="st3" d="M270,600 270,1206"/>
+		 <path id="l2" style="fill:none;stroke:#fff;stroke-width:0.3;stroke-miterlimit:10;" class="st3" d="M270,850 570,850"/>
+		 <path id="l3" style="fill:none;stroke:#fff;stroke-width:0.3;stroke-miterlimit:10;" class="st3" d="M570,390 570,1206"/>
+		 <path id="l4" style="fill:none;stroke:#fff;stroke-width:0.3;stroke-miterlimit:10;" class="st3" d="M570,750 870,750"/>
+		 <path id="l5" style="fill:none;stroke:#fff;stroke-width:0.3;stroke-miterlimit:10;" class="st3" d="M870,190 870,1206"/>
+		 <path id="l6" style="fill:none;stroke:#fff;stroke-width:0.3;stroke-miterlimit:10;" class="st3" d="M870,450 1170,450"/>
+		 <path id="l7" style="fill:none;stroke:#fff;stroke-width:0.3;stroke-miterlimit:10;" class="st3" d="M1170,10 1170,1206"/>
+
+		 
+		 
+		
+	
+		 
+		
+		</g>
+
 	</svg>	
 
 	
@@ -94,7 +110,13 @@
 	}
 	var $line = $("path#line");
 	var $line2 = $("path#line2");
-	
+	var $l1 = $("path#l1");
+	var $l2 = $("path#l2");
+	var $l3 = $("path#l3");
+	var $l4 = $("path#l4");
+	var $l5 = $("path#l5");
+	var $l6 = $("path#l6");
+	var $l7 = $("path#l7");
 
 	var $hc = $("#hc");
 	var $hc2 = $("#hc2");
@@ -102,25 +124,38 @@
 
 	pathPrepare($line);
 	pathPrepare($line2);
+    pathPrepare($l1);
+    pathPrepare($l2);
+    pathPrepare($l3);
+    pathPrepare($l4);
+    pathPrepare($l5);
+    pathPrepare($l6);
+    pathPrepare($l7);
 
 
 	var controller = new ScrollMagic.Controller();
 	
 
 	var tween = new TimelineMax()
-		.add(TweenMax.to($line, 0.5, {strokeDashoffset: 0, ease:Linear.easeNone}))
-		.add(TweenMax.to($line, 0.5, {strokeWidth: 600, ease:Linear.easeNone}))
-		.add(TweenMax.to(".h11", 0.5, {opacity: 1, ease:Linear.easeNone}))
-		.add(TweenMax.to(".h12", 0.5, {opacity: 1, ease:Linear.easeNone}))
-		//.add(TweenMax.to($line2, 0.5, {strokeDashoffset: 0, ease:Linear.easeNone}),0.01)
-		//.add(TweenMax.to($line, 1, {strokeWidth: 1800, ease:Linear.easeNone}),3)
-		//.add(TweenMax.to($line, 1, {strokeDashoffset: 3000, ease:Linear.easeNone}))
-		//.add(TweenMax.to(".h11", 0.2, {opacity: 0, ease:Linear.easeNone}),0)
-		//.add(TweenMax.to(".h12", 0.2, {opacity: 0, ease:Linear.easeNone}),0);
+		.add(TweenMax.to($line, 1.1, {strokeDashoffset: 0, ease:Linear.easeNone}))
+		.add(TweenMax.to($line, 0.4, {strokeWidth: 600, ease:Linear.easeNone}))
+		.add(TweenMax.to($l1, 0.5, {strokeDashoffset: 0, ease:Linear.easeNone}),1.6)
+		.add(TweenMax.to(".team", 0.8, {opacity: 1, ease:Linear.easeNone}),1.9)
+		.add(TweenMax.to($l2, 0.6, {strokeDashoffset: 0, ease:Linear.easeNone}),1.8)
+		.add(TweenMax.to($l3, 0.7, {strokeDashoffset: 0, ease:Linear.easeNone}),2)
+		.add(TweenMax.to(".price", 0.5, {opacity: 1, ease:Linear.easeNone}),2.1)
+		.add(TweenMax.to($l4, 0.6, {strokeDashoffset: 0, ease:Linear.easeNone}),2.2)
+		.add(TweenMax.to($l5, 0.7, {strokeDashoffset: 0, ease:Linear.easeNone}),2.3)
+		.add(TweenMax.to(".port", 0.5, {opacity: 1, ease:Linear.easeNone}),2.35)
+		.add(TweenMax.to($l6, 0.7, {strokeDashoffset: 0, ease:Linear.easeNone}),2.4)
+		.add(TweenMax.to($l7, 0.7, {strokeDashoffset: 0, ease:Linear.easeNone}),2.5)
+		
 
-	var scene = new ScrollMagic.Scene({triggerElement: $hc, duration: 700, tweenChanges: true})
+		;
+
+	var scene = new ScrollMagic.Scene({triggerElement: $hc, duration: 0, tweenChanges: true})
 					.setTween(tween)
-					.setPin(".home_screen")
+					//.setPin(".home_screen")
 					.triggerHook("onLeave")	
 					.addIndicators()
 					.addTo(controller);
