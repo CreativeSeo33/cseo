@@ -7,19 +7,43 @@
 
 .home_screen {
 	height: 100vh;
-	background-color: #DCDDDE;
+	//background-color: #DCDDDE;
+	background-color: #fff;
 	width: 100%;
+	position: relative;
 }
 .home_screen2 {
 	height: 100vh;
-	background-color: #DCDDDE;
+	
+	position: relative;
 }
 .border {
 	border-right:1px solid #333;
 	height: 100px;
 	width: 100%;
 }
-
+.h1 {
+	position: absolute;	
+	font-size: 68px;
+	color: #fff;
+	font-weight: 100;
+	opacity: 0;
+	text-align: center;
+}
+.h11 {
+	top: 56%;
+	left: 27%;
+}
+.h12 {
+	top: 36%;
+	left: 50%;
+}
+.h14 {
+	top: 16%;
+	left: 10%;
+	color: #333;
+	opacity: 1;
+}
 //NAVBAR
 
 nav {

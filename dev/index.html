@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Creative Seo</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -12,14 +12,18 @@
 	
 	
 	<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-	 viewBox="0 0 1600 1200" style="enable-background:new 0 0 1600 1200;" xml:space="preserve">
+	 viewBox="0 0 1600 1200" style="enable-background:new 0 0 1600 1200;" preserveAspectRatio="xMidYMid slice" xml:space="preserve">
 
 	<g>
-	  <path class="st1" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" id="line" d="M1278,0 671.9,606.1 1027.6,961.7"/>
+	  <path class="st1" style="fill:none;stroke:#FB9D50;stroke-width:2;stroke-miterlimit:10;" id="line" d="M1878,-100 -300,1461.7"/>
 	  <path class="st1" id="line2" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M1027.6,250.4 1383.2,606.1 791,1200"/>
 	 
 	 </g>
 	</svg>	
+
+	<div class="h1 h11">90+ <br> ПРОЕКТОВ</div>
+	<div class="h1 h12">90+ <br> ПРОЕКТОВ</div>
+	<div class="h1 h14">Веб-студия <br> Creative Seo</div>
 
 </div>
 <div class="home_screen2" id="hc2">
@@ -29,15 +33,26 @@
 	 viewBox="0 1200 1600 1200" >
 
 	<g>
-	  <path class="st1" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" id="line3" d="M791,1200 195.2,1800 506,2110.8"/>
+	  <path class="st1" id="line3" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M791,1200 195.2,1800 506,2110.8"/>
 	  <path class="st1" id="line4" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M506,1489.2 816.8,1800 506,2110.8 794.3,2400"/>
-	 
+	  <path class="st1" id="line5" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M1086.2,1489.2 1397,1800 1086.2,2110.8"/>
 	 </g>
 	</svg>	
 
+	
+
 </div>
 
-<div class="home_screen2">
+<div class="home_screen2" id="hc3">
+	<svg  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 viewBox="0 2400 1600 1200" >
+
+	<g>
+	  <path class="st1" id="line6" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M794.3,2400 1397,3003.7 1086.2,3314.58"/>
+	  <path class="st1" id="line7" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M1086.2,2692.9 775.4,3003.7 1086.2,3314.5 801.8,3598.2"/>
+	  <path class="st1" id="line8" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M506,2692.9 195.2,3003.7 506,3314.5"/>
+	 </g>
+	</svg>	
 </div>
 
 
@@ -70,6 +85,7 @@
 <script src="libs/scrollmagic/ScrollMagic.js"></script>
 <script src="libs/scrollmagic/animation.gsap.js"></script>
 <script src="libs/scrollmagic/debug.addIndicators.js"></script>
+<script src="js/jquery.smoothscroll.js"></script>
 <script>
 	function pathPrepare ($el) {
 		var lineLength = $el[0].getTotalLength();
@@ -80,25 +96,38 @@
 	var $line2 = $("path#line2");
 	var $line3 = $("path#line3");
 	var $line4 = $("path#line4");
-	/*var $line5 = $("path#line5");
-	var $line6 = $("path#line6");*/
+	var $line5 = $("path#line5");
+	var $line6 = $("path#line6");
+	var $line7 = $("path#line7");
+	var $line8 = $("path#line8");
 
 	var $hc = $("#hc");
 	var $hc2 = $("#hc2");
+	var $hc3 = $("#hc3");
 
 	pathPrepare($line);
 	pathPrepare($line2);
 	pathPrepare($line3);
 	pathPrepare($line4);
-	/*pathPrepare($line5);
-	pathPrepare($line6);*/
+	pathPrepare($line5);
+	pathPrepare($line6);
+	pathPrepare($line7);
+	pathPrepare($line8);
 
 	var controller = new ScrollMagic.Controller();
 	var controller2 = new ScrollMagic.Controller();
+	var controller3 = new ScrollMagic.Controller();
 
 	var tween = new TimelineMax()
 		.add(TweenMax.to($line, 0.5, {strokeDashoffset: 0, ease:Linear.easeNone}))
-		.add(TweenMax.to($line2, 0.5, {strokeDashoffset: 0, ease:Linear.easeNone}),0.01);
+		.add(TweenMax.to($line, 0.5, {strokeWidth: 600, ease:Linear.easeNone}))
+		.add(TweenMax.to(".h11", 0.5, {opacity: 1, ease:Linear.easeNone}))
+		.add(TweenMax.to(".h12", 0.5, {opacity: 1, ease:Linear.easeNone}))
+		//.add(TweenMax.to($line2, 0.5, {strokeDashoffset: 0, ease:Linear.easeNone}),0.01)
+		.add(TweenMax.to($line, 1, {strokeWidth: 1800, ease:Linear.easeNone}),3)
+		//.add(TweenMax.to($line, 1, {strokeDashoffset: 3000, ease:Linear.easeNone}))
+		.add(TweenMax.to(".h11", 0.2, {opacity: 0, ease:Linear.easeNone}),0)
+		.add(TweenMax.to(".h12", 0.2, {opacity: 0, ease:Linear.easeNone}),0);
 
 	var scene = new ScrollMagic.Scene({triggerElement: $hc, duration: 700, tweenChanges: true})
 					.setTween(tween)
@@ -108,15 +137,30 @@
 					.addTo(controller);
 
 	var tween2 = new TimelineMax()
-		.add(TweenMax.to($line4, 0.1, {strokeDashoffset: 0, ease:Linear.easeNone}))
-		.add(TweenMax.to($line3, 0.1, {strokeDashoffset: 0, ease:Linear.easeNone}));
+		.add(TweenMax.to($line3, 2.5, {strokeDashoffset: 0, ease:Linear.easeNone}))
 
-	var scene = new ScrollMagic.Scene({triggerElement: $hc2, duration: 700, offset: 1000})
+		.add(TweenMax.to($line4, 2.5, {strokeDashoffset: 0, ease:Linear.easeNone}),0.5)
+		.add(TweenMax.to($line5, 2, {strokeDashoffset: 0, ease:Linear.easeNone}),0.7);
+
+	var scene = new ScrollMagic.Scene({triggerElement: $hc2, duration: 0, offset: 1000})
 					.setTween(tween2)
 					.setPin(".spin")
 					.triggerHook("onLeave")	
 					.addIndicators()
 					.addTo(controller2);
+
+	var tween3 = new TimelineMax()
+		.add(TweenMax.to($line6, 2.5, {strokeDashoffset: 0, ease:Linear.easeNone}))
+		.add(TweenMax.to($line7, 2.5, {strokeDashoffset: 0, ease:Linear.easeNone}),0.5)
+		.add(TweenMax.to($line8, 2, {strokeDashoffset: 0, ease:Linear.easeNone}),0.7);
+
+	var scene = new ScrollMagic.Scene({triggerElement: $hc3, duration: 0, offset: 2000})
+					.setTween(tween3)
+					//.setPin(".spin3")
+					.triggerHook("onLeave")	
+					.addIndicators()
+					.addTo(controller3);
+
 </script>
 </body>
 </html>

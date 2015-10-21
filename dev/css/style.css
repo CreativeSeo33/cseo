@@ -7260,21 +7260,48 @@ footer {
 /* line 8, ../sass/style.scss */
 .home_screen {
   height: 100vh;
-  background-color: #DCDDDE;
-  width: 100%; }
+  background-color: #fff;
+  width: 100%;
+  position: relative; }
 
-/* line 13, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 .home_screen2 {
   height: 100vh;
-  background-color: #DCDDDE; }
+  position: relative; }
 
-/* line 17, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 .border {
   border-right: 1px solid #333;
   height: 100px;
   width: 100%; }
 
 /* line 25, ../sass/style.scss */
+.h1 {
+  position: absolute;
+  font-size: 68px;
+  color: #fff;
+  font-weight: 100;
+  opacity: 0;
+  text-align: center; }
+
+/* line 33, ../sass/style.scss */
+.h11 {
+  top: 56%;
+  left: 27%; }
+
+/* line 37, ../sass/style.scss */
+.h12 {
+  top: 36%;
+  left: 50%; }
+
+/* line 41, ../sass/style.scss */
+.h14 {
+  top: 16%;
+  left: 10%;
+  color: #333;
+  opacity: 1; }
+
+/* line 49, ../sass/style.scss */
 nav {
   background-color: transparent;
   min-height: 90px;
@@ -7283,7 +7310,7 @@ nav {
   top: 0;
   left: 0; }
 
-/* line 34, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .logo {
   padding: 0 20px;
   font-weight: 900;
