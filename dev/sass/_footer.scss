@@ -1,12 +1,28 @@
 footer {
 	background-color:#000;
 	color: #fff;	
-	
+	ul {
+		padding: 0;
+		li {
+			list-style-type: none;
+			padding: 10px 0;
+			font-size:18px;
+			font-weight:300;
+			a {
+
+			}
+	}
+	}
 }
 .footer {
 	&_logo {
 		font-weight:900;
 		font-size:24px;
 		padding: 20px 0;
+	}
+	&_h2 {
+		font-weight:700;
+		font-size:22px;
+		padding: 5px 0;
 	}
 }

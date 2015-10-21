@@ -7250,12 +7250,26 @@ button.close {
 footer {
   background-color: #000;
   color: #fff; }
+  /* line 4, ../sass/_footer.scss */
+  footer ul {
+    padding: 0; }
+    /* line 6, ../sass/_footer.scss */
+    footer ul li {
+      list-style-type: none;
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: 300; }
 
-/* line 7, ../sass/_footer.scss */
+/* line 18, ../sass/_footer.scss */
 .footer_logo {
   font-weight: 900;
   font-size: 24px;
   padding: 20px 0; }
+/* line 23, ../sass/_footer.scss */
+.footer_h2 {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 5px 0; }
 
 /* line 8, ../sass/style.scss */
 .home_screen {
@@ -7315,3 +7329,7 @@ nav {
   padding: 0 20px;
   font-weight: 900;
   font-size: 24px; }
+
+/* line 66, ../sass/style.scss */
+.svga:hover {
+  text-decoration: none; }
