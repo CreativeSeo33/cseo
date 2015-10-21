@@ -7273,7 +7273,7 @@ footer {
 
 /* line 8, ../sass/style.scss */
 .home_screen {
-  height: 100vh;
+  height: 125vh;
   background-color: #fff;
   width: 100%;
   position: relative; }
@@ -7310,12 +7310,15 @@ footer {
 
 /* line 41, ../sass/style.scss */
 .h14 {
-  top: 16%;
-  left: 10%;
+  top: 12%;
+  left: 9%;
   color: #333;
   opacity: 1; }
+  /* line 46, ../sass/style.scss */
+  .h14 span {
+    color: #35334C; }
 
-/* line 49, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 nav {
   background-color: transparent;
   min-height: 90px;
@@ -7324,16 +7327,16 @@ nav {
   top: 0;
   left: 0; }
 
-/* line 58, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .logo {
   padding: 0 20px;
   font-weight: 900;
   font-size: 24px; }
 
-/* line 66, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .svga:hover {
   text-decoration: none; }
 
-/* line 72, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .team, .price, .port {
   opacity: 0; }
