@@ -7323,20 +7323,147 @@ nav {
   background-color: transparent;
   min-height: 90px;
   line-height: 90px;
-  position: absolute;
-  top: 0;
-  left: 0; }
+  position: relative;
+  color: #333;
+  z-index: 30;
+  transition-duration: 0.1s; }
+  /* line 60, ../sass/style.scss */
+  nav ul {
+    padding: 0; }
+    /* line 63, ../sass/style.scss */
+    nav ul li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0 20px;
+      font-size: 18px;
+      font-weight: 300; }
+      /* line 69, ../sass/style.scss */
+      nav ul li a {
+        color: inherit; }
 
-/* line 61, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
+.nav_white {
+  color: #fff; }
+
+/* line 79, ../sass/style.scss */
+.nav_w {
+  fill: #fff; }
+
+/* line 84, ../sass/style.scss */
+.nav_phone {
+  font-size: 22px;
+  font-weight: 700; }
+/* line 89, ../sass/style.scss */
+.nav_menu span {
+  padding: 0 5px 5px 0; }
+/* line 92, ../sass/style.scss */
+.nav_menu .tIcons {
+  padding-top: 3px; }
+
+/* line 97, ../sass/style.scss */
 .logo {
   padding: 0 20px;
   font-weight: 900;
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 900; }
 
-/* line 69, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
+.menu-expand {
+  backface-visibility: hidden;
+  background: rgba(2, 23, 37, 0.96) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition-duration: 0.4s;
+  transition-property: transform;
+  width: 100%;
+  z-index: 1;
+  color: #fff; }
+
+/* line 119, ../sass/style.scss */
+.menu-is-open {
+  transform: translateY(0px); }
+
+/* line 122, ../sass/style.scss */
+.nav_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 125, ../sass/style.scss */
+.tIcons_button {
+  color: inherit; }
+
+/* line 131, ../sass/style.scss */
 .svga:hover {
   text-decoration: none; }
 
-/* line 75, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .team, .price, .port {
   opacity: 0; }
+
+/* line 145, ../sass/style.scss */
+.tIcons svg {
+  fill: #333;
+  transition-duration: 0.4s; }
+
+/* line 149, ../sass/style.scss */
+a.tIcons {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.25em;
+  position: relative; }
+
+/* line 155, ../sass/style.scss */
+a.tIcons svg {
+  width: 100%;
+  display: block;
+  position: absolute;
+  transition-duration: 0.4s; }
+
+/* line 161, ../sass/style.scss */
+a.tIcons svg:first-child {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+
+/* line 168, ../sass/style.scss */
+a.tIcons svg:last-child {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
+/* line 178, ../sass/style.scss */
+a.tIcons.toggle svg:first-child {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
+/* line 183, ../sass/style.scss */
+a.tIcons.toggle svg:last-child {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+/* line 188, ../sass/style.scss */
+a.tIcons.tRotate svg:last-child {
+  -webkit-transform: scale(0) rotate(0deg);
+  -ms-transform: scale(0) rotate(0deg);
+  transform: scale(0) rotate(0deg); }
+
+/* line 193, ../sass/style.scss */
+a.tIcons.tRotate.toggle svg:last-child {
+  -webkit-transform: scale(1) rotate(-360deg);
+  -ms-transform: scale(1) rotate(-360deg);
+  transform: scale(1) rotate(-360deg); }
