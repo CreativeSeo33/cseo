@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Creative Seo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<style>
+							#ui-ux {
+								
+    width: 170px;
+							}
+							#ui-ux .st0, #ui-ux .st1 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 1;
+}
+						 	</style>
+</head>
+<body>
+
+<div class="home_screen" id="hc">
+	
+	
+
+							
+						
+
+
+	<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 viewBox="0 0 1600 1200" style="enable-background:new 0 0 1600 1200;" preserveAspectRatio="xMidYMid slice" xml:space="preserve">
+	<style type="text/css">
+		.st3{fill:none;stroke:#fff;stroke-width:0.3;stroke-miterlimit:1;}
+		.txt{stroke-width:0.3;color: #fff;font-family:'Roboto', sans-serif;font-size:32px;font-weight:100;}
+		.txta{stroke-width:0.3;color: #fff;font-family:'Roboto', sans-serif;font-size:18px;font-weight:100;}
+		.svga {fill:none;stroke:#fff;stroke-width:0.3;}
+	</style>
+
+	<defs>
+        <linearGradient id="gradientName">
+            <!-- <stop offset="0%" stop-color="#FE8F5A " />
+            <stop offset="100%" stop-color="#FAA74A" /> -->
+            <stop offset="0%" stop-color="#6E618A" />
+            <stop offset="50%" stop-color="#35334C" />
+            <stop offset="100%" stop-color="#35334C" />
+        </linearGradient>
+        <linearGradient id="gradient2">
+            <stop offset="0%" stop-color="#FE8F5A " />
+            <stop offset="100%" stop-color="#FAA74A" /> 
+           
+        </linearGradient>
+    </defs>
+     <defs>
+    <filter id="f3" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceAlpha" dx="3" dy="3" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+
+	
+	  <path class="st1" stroke="url(#gradientName)" style="fill:none;stroke-width:2;stroke-miterlimit:10;" id="line" d="M-300,599 1978,600 "/>
+	  
+	 <path class="st1" stroke="url(#gradient2)" style="fill:none;stroke-width:2;stroke-miterlimit:10;" id="line2" d="M600,0 599,1200 "/>
+	 <path class="st1" stroke="url(#gradient2)" style="fill:none;stroke-width:2;stroke-miterlimit:10;" id="line2" d="M800,0 799,1200 "/>
+		
+
+	</svg>	
+
+	
+	<!-- <div class="h1 h14">Веб-студия <br> <span>Creative Seo</span> </div> -->
+
+</div>
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="footer_logo">
+				CreativeSeo
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer_h2">Продвижение сайтов</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer_h2">Создание сайтов</div>
+				<ul>
+					<li>Корпоративные сайты</li>
+					<li>Сайты визитки</li>
+					<li>Интернет-магазины</li>
+					<li>Landing page</li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<div class="footer_h2">Контекстная реклама</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer_h2">Наш офис</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<script src="libs/gsap/TweenMax.min.js"></script>
+<script src="libs/scrollmagic/ScrollMagic.js"></script>
+<script src="libs/scrollmagic/animation.gsap.js"></script>
+<script src="libs/scrollmagic/debug.addIndicators.js"></script>
+<script src="js/jquery.smoothscroll.js"></script>
+<script>
+	function pathPrepare ($el) {
+		var lineLength = $el[0].getTotalLength();
+		$el.css("stroke-dasharray", lineLength);
+		$el.css("stroke-dashoffset", lineLength);
+	}
+	var $line = $("path#line");
+	var $line2 = $("path#line2");
+	
+
+	var $hc = $("#hc");
+	var $hc2 = $("#hc2");
+	var $hc3 = $("#hc3");
+
+	pathPrepare($line);
+	pathPrepare($line2);
+	
+
+	var controller = new ScrollMagic.Controller();
+	
+
+	var tween = new TimelineMax()
+		.add(TweenMax.to($line2, 1.1, {strokeDashoffset: 0, ease:Linear.easeNone}))
+		.add(TweenMax.to($line, 1.1, {strokeDashoffset: 0, ease:Linear.easeNone}),0)
+		.add(TweenMax.to($line, 0.4, {strokeWidth: 500, ease:Linear.easeNone}))
+		.add(TweenMax.to($line2, 0.4, {strokeWidth: 200, ease:Linear.easeNone}))
+		
+
+		;
+
+	var scene = new ScrollMagic.Scene({triggerElement: $hc, duration: 0, tweenChanges: true})
+					.setTween(tween)
+					//.setPin(".home_screen")
+					.triggerHook("onLeave")	
+					.addIndicators()
+					.addTo(controller);
+
+	
+
+</script>
+</body>
+</html>

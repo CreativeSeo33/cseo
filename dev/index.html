@@ -55,7 +55,7 @@
   </defs>
 
 	<g>
-	  <path class="st1" stroke="url(#gradientName)" style="fill:none;stroke-width:2;stroke-miterlimit:10;" id="line" d="M1978,-50 -300,961.7"/>
+	  <path class="st1"  stroke="url(#gradientName)" style="fill:none;stroke-width:2;stroke-miterlimit:10;" id="line" d="M1978,-50 -300,961.7"/>
 	  <path class="st1" id="line2" style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10;" d="M1027.6,250.4 1383.2,606.1 791,1200"/>
 	
 	 <!-- <a class="svga team" font-family="'Roboto', sans-serif" xlink:href="/"><text transform="matrix(1 0 0 1 300 750)" class="txt">КОМАНДА</text></a>	 -->
@@ -340,7 +340,7 @@
 	</svg>	
 
 	
-	<div class="h1 h14">Веб-студия <br> <span>Creative Seo</span> </div>
+	<div class="h1 h14">Веб-студия <br> Creative Seo </div>
 
 </div>
 
@@ -421,7 +421,7 @@
 	var tween = new TimelineMax()
 		.add(TweenMax.to($line, 1.1, {strokeDashoffset: 0, ease:Linear.easeNone}))
 		.add(TweenMax.to($line, 0.4, {strokeWidth: 500, ease:Linear.easeNone}))
-		.add(TweenMax.to($line, 0.4, {filter: "url(#f3)", ease:Linear.easeNone}),1.5)
+		//.add(TweenMax.to($line, 0.4, {filter: "url(#f3)", ease:Linear.easeNone}),1.5)
 		.add(TweenMax.to($l1, 0.5, {strokeDashoffset: 0, ease:Linear.easeNone}),1.6)
 		.add(TweenMax.to(".team", 0.8, {opacity: 1, ease:Linear.easeNone}),1.9)
 		.add(TweenMax.to($l2, 0.6, {strokeDashoffset: 0, ease:Linear.easeNone}),1.8)
@@ -432,6 +432,10 @@
 		//.add(TweenMax.to(".port", 0.5, {opacity: 1, ease:Linear.easeNone}),2.35)
 		.add(TweenMax.to($l6, 0.7, {strokeDashoffset: 0, ease:Linear.easeNone}),2.4)
 		.add(TweenMax.to($l7, 0.7, {strokeDashoffset: 0, ease:Linear.easeNone}),2.5)
+		.add(TweenMax.to($line, 0.7, {rotation:360, transformOrigin:"50% 50%", ease:Linear.easeNone}),0)
+		.add(TweenMax.to($line, 0.7, {rotation:"+=24", transformOrigin:"50% 50%", ease:Linear.easeNone}))
+		.add(TweenMax.to($line, 0.4, {strokeWidth: 1000, ease:Linear.easeNone}))
+		.add(TweenMax.to(".h14", 0.4, {color: "#fff", ease:Linear.easeNone}))
 		
 
 		;
