@@ -6,10 +6,44 @@
    	font-size: 24px;
    	font-weight: 300;
    	font-family: $font-family-cond;
+   	line-height: 1.6em;
+   }
+   &_time {
+   	font-size: 14px;
+   	color: #737373;
+   	line-height: 1.6em;
    }
    &_h3 {
    	font-family: $font-family-cond;
-   	font-weight: 700;
+   	font-weight: 300;
    	font-size: 22px;
+   	padding-bottom: 10px;
+   	a {
+   		color: #fff;
+   		text-decoration: none;
+   		&:hover, &:hover, &:active {
+   			color: $gold;
+   		}
+   	}
+   }
+   ul {
+   	padding: 0;
+   	li {
+   		list-style-type: none;
+   		a {
+   			color: #7b7b7b;
+   			font-size: 16px;
+   			font-weight: 300;
+   			line-height: 1.7em;
+   			&:hover, &:hover, &:active {
+   			color: $gold;
+   		}
+   		}
+   	}
+   }
+   &_copyright {
+		font-size: 16px;
+		font-weight: 300;
+		padding: 10px 0;
    }
 }

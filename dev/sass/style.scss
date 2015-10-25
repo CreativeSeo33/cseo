@@ -8,6 +8,9 @@
 @import "buttons";
 @import "../libs/font-awesome/css/font-awesome.min.css";
 
+a {
+	transition: all 0.25s ease-out 0s;
+}
 
 .home_screen {
 	height: 125vh;
