@@ -1,28 +1,21 @@
-footer {
-	background-color:#000;
-	color: #fff;	
-	ul {
-		padding: 0;
-		li {
-			list-style-type: none;
-			padding: 10px 0;
-			font-size:18px;
-			font-weight:300;
-			a {
-
-			}
-	}
-	}
-}
 .footer {
-	&_logo {
-		font-weight:900;
-		font-size:24px;
-		padding: 20px 0;
-	}
-	&_h2 {
-		font-weight:700;
-		font-size:22px;
-		padding: 5px 0;
+    //margin: 50px 0 0 0;
+    position: relative;
+    text-align: left;
+    color: #fff;
+    @include gradient-horizontal(#21314A, #1D3551, 0%, 100%);
+    &_wrap {
+		padding: 0 30px 30px 30px;
+		
+    }
+    &_links {
+	    //@include gradient-horizontal(#1D3551, #3C6D7E, 0%, 100%);
+	    
+	    padding: 30px;
+	    //margin-top: -50px;
+	    &_h3 {
+	    	font-weight: 300;
+	    	font-size: 18px;
+	    }
 	}
 }

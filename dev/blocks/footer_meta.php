@@ -8,6 +8,7 @@
 <script src="/libs/scrollmagic/animation.gsap.js"></script>
 <script src="/libs/scrollmagic/debug.addIndicators.js"></script>
 <script src="/js/jquery.smoothscroll.js"></script>
+<script src="/js/jquery.hoverdir.js"></script> 
 <?php echo $script; ?>
 <script src="/js/common.js"></script>
 <script>
@@ -38,6 +39,16 @@ $('.button-blob').on('mouseleave', function(e){
 },800);
 });
 </script>
+
+<script type="text/javascript">
+      $(function() {
+
+        $('.da-thumbs ').each( function() { $(this).hoverdir({
+          hoverDelay : 75
+        }); } );
+
+      });
+    </script>
 <!-- /build -->
 
 <!-- build:template

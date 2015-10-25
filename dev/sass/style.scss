@@ -67,6 +67,48 @@ input[type="submit"], textarea[type="submit"] {
   cursor: pointer;
 }
 
+//PORTFOLIO
+
+.portfolio {
+	padding: 0 30px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.portfolio_title {
+	//font: $font-open-sans-cond;
+	font-weight:700;
+	font-size:18px;
+	padding: 20px 0 8px 0;
+	text-transform:uppercase;
+}
+.da-thumbs  {
+	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+	}
+	div {
+		span {
+			opacity: 0.9;
+			font-weight:100;
+			font-size:26px;
+			color: #fff;
+		}
+		> span {
+			font-size:28px;
+			font-weight:300;
+			color: #fff;
+			@include centerer;
+		}
+	}
+}
+.da-thumbs div {
+    background: rgba(75, 75, 75, 0.7) none repeat scroll 0 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+//PORTFOLIO
 
 
 

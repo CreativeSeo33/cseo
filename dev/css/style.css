@@ -7247,29 +7247,25 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /* line 1, ../sass/_footer.scss */
-footer {
-  background-color: #000;
-  color: #fff; }
-  /* line 4, ../sass/_footer.scss */
-  footer ul {
-    padding: 0; }
-    /* line 6, ../sass/_footer.scss */
-    footer ul li {
-      list-style-type: none;
-      padding: 10px 0;
-      font-size: 18px;
-      font-weight: 300; }
-
-/* line 18, ../sass/_footer.scss */
-.footer_logo {
-  font-weight: 900;
-  font-size: 24px;
-  padding: 20px 0; }
-/* line 23, ../sass/_footer.scss */
-.footer_h2 {
-  font-weight: 700;
-  font-size: 22px;
-  padding: 5px 0; }
+.footer {
+  position: relative;
+  text-align: left;
+  color: #fff;
+  background-image: -webkit-linear-gradient(left, #21314A 0%, #1D3551 100%);
+  background-image: -o-linear-gradient(left, #21314A 0%, #1D3551 100%);
+  background-image: linear-gradient(to right, #21314A 0%, #1D3551 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF21314A', endColorstr='#FF1D3551', GradientType=1); }
+  /* line 7, ../sass/_footer.scss */
+  .footer_wrap {
+    padding: 0 30px 30px 30px; }
+  /* line 11, ../sass/_footer.scss */
+  .footer_links {
+    padding: 30px; }
+    /* line 16, ../sass/_footer.scss */
+    .footer_links_h3 {
+      font-weight: 300;
+      font-size: 18px; }
 
 @media only screen and (min-width: 768px) {
   /* line 2, ../sass/_google-maps.scss */
@@ -7348,11 +7344,11 @@ footer {
 
 /* line 3, ../sass/_navbar.scss */
 nav {
-  background-color: transparent;
+  background-color: #171B1E;
   min-height: 90px;
   line-height: 90px;
   position: relative;
-  color: #333;
+  color: #B1986A;
   z-index: 30;
   transition-duration: 0.1s; }
   /* line 11, ../sass/_navbar.scss */
@@ -7393,9 +7389,10 @@ nav {
   padding: 0 20px;
   font-weight: 900;
   font-size: 24px;
-  font-weight: 900; }
+  font-weight: 900;
+  color: inherit; }
 
-/* line 54, ../sass/_navbar.scss */
+/* line 56, ../sass/_navbar.scss */
 .menu-expand {
   backface-visibility: hidden;
   background: rgba(2, 23, 37, 0.96) none repeat scroll 0 0;
@@ -7411,49 +7408,49 @@ nav {
   z-index: 1;
   color: #fff; }
 
-/* line 70, ../sass/_navbar.scss */
+/* line 72, ../sass/_navbar.scss */
 .menu-is-open {
   transform: translateY(0px); }
 
-/* line 73, ../sass/_navbar.scss */
+/* line 75, ../sass/_navbar.scss */
 .nav_content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-/* line 76, ../sass/_navbar.scss */
+/* line 78, ../sass/_navbar.scss */
 .tIcons_button {
   color: inherit; }
 
-/* line 82, ../sass/_navbar.scss */
+/* line 84, ../sass/_navbar.scss */
 .svga:hover {
   text-decoration: none; }
 
-/* line 88, ../sass/_navbar.scss */
+/* line 90, ../sass/_navbar.scss */
 .team, .price, .port {
   opacity: 0; }
 
-/* line 96, ../sass/_navbar.scss */
+/* line 98, ../sass/_navbar.scss */
 .tIcons svg {
-  fill: #333;
+  fill: #B1986A;
   transition-duration: 0.4s; }
 
-/* line 100, ../sass/_navbar.scss */
+/* line 102, ../sass/_navbar.scss */
 a.tIcons {
   display: inline-block;
   width: 1.5em;
   height: 1.25em;
   position: relative; }
 
-/* line 106, ../sass/_navbar.scss */
+/* line 108, ../sass/_navbar.scss */
 a.tIcons svg {
   width: 100%;
   display: block;
   position: absolute;
   transition-duration: 0.4s; }
 
-/* line 112, ../sass/_navbar.scss */
+/* line 114, ../sass/_navbar.scss */
 a.tIcons svg:first-child {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -7461,7 +7458,7 @@ a.tIcons svg:first-child {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
 
-/* line 119, ../sass/_navbar.scss */
+/* line 121, ../sass/_navbar.scss */
 a.tIcons svg:last-child {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -7472,25 +7469,25 @@ a.tIcons svg:last-child {
   -ms-transform: scale(0);
   transform: scale(0); }
 
-/* line 129, ../sass/_navbar.scss */
+/* line 131, ../sass/_navbar.scss */
 a.tIcons.toggle svg:first-child {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0); }
 
-/* line 134, ../sass/_navbar.scss */
+/* line 136, ../sass/_navbar.scss */
 a.tIcons.toggle svg:last-child {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
 
-/* line 139, ../sass/_navbar.scss */
+/* line 141, ../sass/_navbar.scss */
 a.tIcons.tRotate svg:last-child {
   -webkit-transform: scale(0) rotate(0deg);
   -ms-transform: scale(0) rotate(0deg);
   transform: scale(0) rotate(0deg); }
 
-/* line 144, ../sass/_navbar.scss */
+/* line 146, ../sass/_navbar.scss */
 a.tIcons.tRotate.toggle svg:last-child {
   -webkit-transform: scale(1) rotate(-360deg);
   -ms-transform: scale(1) rotate(-360deg);
@@ -7715,3 +7712,46 @@ input, textarea {
 input[type="submit"], textarea[type="submit"] {
   border: none;
   cursor: pointer; }
+
+/* line 72, ../sass/style.scss */
+.portfolio {
+  padding: 0 30px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/* line 77, ../sass/style.scss */
+.portfolio_title {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 20px 0 8px 0;
+  text-transform: uppercase; }
+
+/* line 84, ../sass/style.scss */
+.da-thumbs {
+  position: relative;
+  overflow: hidden; }
+  /* line 87, ../sass/style.scss */
+  .da-thumbs img {
+    width: 100%; }
+  /* line 91, ../sass/style.scss */
+  .da-thumbs div span {
+    opacity: 0.9;
+    font-weight: 100;
+    font-size: 26px;
+    color: #fff; }
+  /* line 97, ../sass/style.scss */
+  .da-thumbs div > span {
+    font-size: 28px;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* line 105, ../sass/style.scss */
+.da-thumbs div {
+  background: rgba(75, 75, 75, 0.7) none repeat scroll 0 0;
+  height: 100%;
+  position: absolute;
+  width: 100%; }
