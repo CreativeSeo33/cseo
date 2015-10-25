@@ -7548,42 +7548,42 @@ a.tIcons.tRotate.toggle svg:last-child {
 .contacts_form {
   background: #171b1e none repeat scroll 0 0;
   padding: 4em 0; }
-  /* line 4, ../sass/_contacts.scss */
+  /* line 5, ../sass/_contacts.scss */
   .contacts_form form {
     border: 0 none;
     padding: 0;
     vertical-align: baseline; }
-    /* line 8, ../sass/_contacts.scss */
+    /* line 9, ../sass/_contacts.scss */
     .contacts_form form li {
       border: 0 none;
       font-family: inherit; }
-  /* line 13, ../sass/_contacts.scss */
+  /* line 14, ../sass/_contacts.scss */
   .contacts_form h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 52px;
     font-weight: 300;
     text-align: center; }
-  /* line 20, ../sass/_contacts.scss */
+  /* line 21, ../sass/_contacts.scss */
   .contacts_form ul {
     list-style: outside none none;
     padding: 0; }
-  /* line 24, ../sass/_contacts.scss */
+  /* line 25, ../sass/_contacts.scss */
   .contacts_form ul li:nth-child(1) {
     margin-right: 3.6%; }
-  /* line 27, ../sass/_contacts.scss */
+  /* line 28, ../sass/_contacts.scss */
   .contacts_form ul li:nth-child(1), .contacts_form ul li:nth-child(2) {
     display: inline-block;
     width: 48%; }
-  /* line 31, ../sass/_contacts.scss */
+  /* line 32, ../sass/_contacts.scss */
   .contacts_form ul li:nth-child(1) input, .contacts_form ul li:nth-child(2) input {
     width: 100%; }
-  /* line 34, ../sass/_contacts.scss */
+  /* line 35, ../sass/_contacts.scss */
   .contacts_form ul li:nth-child(3) textarea {
     margin-top: 50px;
     min-height: 200px;
     width: 100%; }
-  /* line 39, ../sass/_contacts.scss */
+  /* line 40, ../sass/_contacts.scss */
   .contacts_form form input, .contacts_form form textarea {
     background: transparent none repeat scroll 0 0;
     border-width: 0 0 1px 0;
@@ -7592,34 +7592,34 @@ a.tIcons.tRotate.toggle svg:last-child {
     font-size: 2rem;
     padding: 0.6em 0;
     border-radius: 0; }
-  /* line 48, ../sass/_contacts.scss */
+  /* line 49, ../sass/_contacts.scss */
   .contacts_form form input:focus, .contacts_form form textarea:focus {
     outline: none; }
-  /* line 51, ../sass/_contacts.scss */
+  /* line 52, ../sass/_contacts.scss */
   .contacts_form form input::-webkit-input-placeholder, .contacts_form form textarea::-webkit-input-placeholder {
     color: #444a4f; }
-  /* line 54, ../sass/_contacts.scss */
+  /* line 55, ../sass/_contacts.scss */
   .contacts_form form input:-moz-placeholder, .contacts_form form textarea:-moz-placeholder {
     color: #444a4f; }
-  /* line 57, ../sass/_contacts.scss */
+  /* line 58, ../sass/_contacts.scss */
   .contacts_form form input::-moz-placeholder, .contacts_form form textarea::-moz-placeholder {
     color: #444a4f; }
-  /* line 60, ../sass/_contacts.scss */
+  /* line 61, ../sass/_contacts.scss */
   .contacts_form form input:-ms-input-placeholder, .contacts_form form textarea:-ms-input-placeholder {
     color: #444a4f; }
-  /* line 63, ../sass/_contacts.scss */
+  /* line 64, ../sass/_contacts.scss */
   .contacts_form .required {
     background: transparent url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld0JveD0iMCAwIDQgNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNCA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojQjQ1MjUyO30NCjwvc3R5bGU+DQo8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSIyIiBjeT0iMiIgcj0iMiIvPg0KPC9zdmc+DQo=") no-repeat scroll right top; }
-  /* line 67, ../sass/_contacts.scss */
+  /* line 68, ../sass/_contacts.scss */
   .contacts_form textarea {
     overflow-y: auto; }
 
 @media only screen and (max-width: 30em) {
-  /* line 74, ../sass/_contacts.scss */
+  /* line 75, ../sass/_contacts.scss */
   form input, form textarea {
     padding: .4em 0;
     font-size: 16px; } }
-/* line 80, ../sass/_contacts.scss */
+/* line 81, ../sass/_contacts.scss */
 .contacts_block_map {
   position: absolute;
   top: 15%;
@@ -7628,19 +7628,19 @@ a.tIcons.tRotate.toggle svg:last-child {
   padding: 50px 40px;
   overflow: hidden;
   max-width: 350px; }
-  /* line 88, ../sass/_contacts.scss */
+  /* line 89, ../sass/_contacts.scss */
   .contacts_block_map h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 26px; }
-  /* line 93, ../sass/_contacts.scss */
+  /* line 94, ../sass/_contacts.scss */
   .contacts_block_map_text {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
     width: 100%;
     padding: 20px 15px; }
-    /* line 99, ../sass/_contacts.scss */
+    /* line 100, ../sass/_contacts.scss */
     .contacts_block_map_text_phone {
       font-size: 22px;
       font-weight: 300;
@@ -7708,53 +7708,53 @@ button.button-blob:focus {
 .pink {
   border-color: #bd0f77; }
 
-/* line 11, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 a {
   transition: all 0.25s ease-out 0s; }
 
-/* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 .home_screen {
   height: 125vh;
   background-color: #fff;
   width: 100%;
   position: relative; }
 
-/* line 22, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .home_screen2 {
   height: 100vh;
   position: relative; }
 
-/* line 27, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .border {
   border-right: 1px solid #333;
   height: 100px;
   width: 100%; }
 
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 ul, ol {
   margin: 0; }
 
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .h11 {
   top: 56%;
   left: 27%; }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .h12 {
   top: 36%;
   left: 50%; }
 
-/* line 44, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .h14 {
   top: 12%;
   left: 9%;
   color: #333;
   opacity: 1; }
-  /* line 49, ../sass/style.scss */
+  /* line 50, ../sass/style.scss */
   .h14 span {
     color: #35334C; }
 
-/* line 54, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 input, textarea {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -7769,38 +7769,38 @@ input, textarea {
   -o-border-radius: 0;
   border-radius: 0; }
 
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 input[type="submit"], textarea[type="submit"] {
   border: none;
   cursor: pointer; }
 
-/* line 75, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .portfolio {
   padding: 0 30px;
   margin-top: 50px;
   margin-bottom: 50px; }
 
-/* line 80, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .portfolio_title {
   font-weight: 700;
   font-size: 18px;
   padding: 20px 0 8px 0;
   text-transform: uppercase; }
 
-/* line 87, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .da-thumbs {
   position: relative;
   overflow: hidden; }
-  /* line 90, ../sass/style.scss */
+  /* line 91, ../sass/style.scss */
   .da-thumbs img {
     width: 100%; }
-  /* line 94, ../sass/style.scss */
+  /* line 95, ../sass/style.scss */
   .da-thumbs div span {
     opacity: 0.9;
     font-weight: 100;
     font-size: 26px;
     color: #fff; }
-  /* line 100, ../sass/style.scss */
+  /* line 101, ../sass/style.scss */
   .da-thumbs div > span {
     font-size: 28px;
     font-weight: 300;
@@ -7810,7 +7810,7 @@ input[type="submit"], textarea[type="submit"] {
     left: 50%;
     transform: translate(-50%, -50%); }
 
-/* line 108, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .da-thumbs div {
   background: rgba(75, 75, 75, 0.7) none repeat scroll 0 0;
   height: 100%;
