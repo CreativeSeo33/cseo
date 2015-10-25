@@ -15,14 +15,16 @@ nav {
 			display: inline-block;
 			list-style-type: none;
 			padding: 0 20px;
-			font-size:18px;
-			font-weight:300;
+			font-size:12px;
+			font-weight:400;
 			a {
 				color: inherit;
+				text-transform: uppercase;
 			}
 		}
 	}
 }
+
 .nav_white {
 	color: #fff;
 	
@@ -34,9 +36,11 @@ nav {
 .nav {
 	&_phone {
 		font-size:22px;
-		font-weight:700;
+		font-weight:300;
+		float: right;
 	}
 	&_menu {
+		padding: 0 25px;
 		span {
 			padding: 0 5px 5px 0;
 		}
@@ -55,7 +59,8 @@ nav {
 }
 .menu-expand {
 	backface-visibility: hidden;
-    background: rgba(2, 23, 37, 0.96) none repeat scroll 0 0;
+    background: $background-navbar-expand none repeat scroll 0 0;
+    opacity: 0.95;
     height: 100%;
     left: 0;
     overflow: auto;
@@ -77,6 +82,7 @@ nav {
 }
 .tIcons_button {
 	color: inherit;
+	font-size: 12px;
 }
 //NAVBAR
 

@@ -87,6 +87,7 @@
 	max-width: 350px;
 	h1 {
 		text-align: center;
+		text-transform: uppercase;
 	}
 	&_text {
 		margin-left: 10px;
@@ -99,5 +100,11 @@
 		td {
 			padding: 15px 0px;
 		}
+	}
+	.fa-stack-2x {
+		color: #171B1E;
+	}
+	.fa-stack-1x {
+		color: #fff;
 	}
 }
