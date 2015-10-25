@@ -1493,7 +1493,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit; }
   /* line 16, ../libs/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
@@ -3636,7 +3636,7 @@ select[multiple].input-lg,
 .btn {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: "Roboto", sans-serif;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -7271,32 +7271,410 @@ footer {
   font-size: 22px;
   padding: 5px 0; }
 
-/* line 8, ../sass/style.scss */
+@media only screen and (min-width: 768px) {
+  /* line 2, ../sass/_google-maps.scss */
+  header {
+    height: 300px;
+    line-height: 300px; } }
+/* line 8, ../sass/_google-maps.scss */
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #e7eaf0; }
+
+@media only screen and (min-width: 768px) {
+  /* line 15, ../sass/_google-maps.scss */
+  #google-container {
+    height: 300px; } }
+@media only screen and (min-width: 1170px) {
+  /* line 20, ../sass/_google-maps.scss */
+  #google-container {
+    height: 600px; } }
+/* line 25, ../sass/_google-maps.scss */
+#cd-google-map {
+  position: relative; }
+
+/* line 28, ../sass/_google-maps.scss */
+#cd-google-map address {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1em;
+  background-color: rgba(211, 104, 104, 0.9);
+  color: white;
+  font-size: 13px;
+  font-size: 0.8125rem; }
+
+@media only screen and (min-width: 768px) {
+  /* line 40, ../sass/_google-maps.scss */
+  #cd-google-map address {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-align: center; } }
+/* line 47, ../sass/_google-maps.scss */
+#cd-zoom-in, #cd-zoom-out {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgba(211, 104, 104, 0.9);
+  background-repeat: no-repeat;
+  background-size: 32px 64px;
+  background-image: url("../img/cd-icon-controller.svg"); }
+
+/* line 57, ../sass/_google-maps.scss */
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+  background-color: #d36868; }
+
+@media only screen and (min-width: 768px) {
+  /* line 61, ../sass/_google-maps.scss */
+  #cd-zoom-in, #cd-zoom-out {
+    margin-left: 50px; } }
+/* line 66, ../sass/_google-maps.scss */
+#cd-zoom-in {
+  background-position: 50% 0;
+  margin-top: 10px;
+  margin-bottom: 1px; }
+
+@media only screen and (min-width: 768px) {
+  /* line 72, ../sass/_google-maps.scss */
+  #cd-zoom-in {
+    margin-top: 50px; } }
+/* line 77, ../sass/_google-maps.scss */
+#cd-zoom-out {
+  background-position: 50% -32px; }
+
+/* line 3, ../sass/_navbar.scss */
+nav {
+  background-color: transparent;
+  min-height: 90px;
+  line-height: 90px;
+  position: relative;
+  color: #333;
+  z-index: 30;
+  transition-duration: 0.1s; }
+  /* line 11, ../sass/_navbar.scss */
+  nav ul {
+    padding: 0; }
+    /* line 14, ../sass/_navbar.scss */
+    nav ul li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0 20px;
+      font-size: 18px;
+      font-weight: 300; }
+      /* line 20, ../sass/_navbar.scss */
+      nav ul li a {
+        color: inherit; }
+
+/* line 26, ../sass/_navbar.scss */
+.nav_white {
+  color: #fff; }
+
+/* line 30, ../sass/_navbar.scss */
+.nav_w {
+  fill: #fff; }
+
+/* line 35, ../sass/_navbar.scss */
+.nav_phone {
+  font-size: 22px;
+  font-weight: 700; }
+/* line 40, ../sass/_navbar.scss */
+.nav_menu span {
+  padding: 0 5px 5px 0; }
+/* line 43, ../sass/_navbar.scss */
+.nav_menu .tIcons {
+  padding-top: 3px; }
+
+/* line 48, ../sass/_navbar.scss */
+.logo {
+  padding: 0 20px;
+  font-weight: 900;
+  font-size: 24px;
+  font-weight: 900; }
+
+/* line 54, ../sass/_navbar.scss */
+.menu-expand {
+  backface-visibility: hidden;
+  background: rgba(2, 23, 37, 0.96) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition-duration: 0.4s;
+  transition-property: transform;
+  width: 100%;
+  z-index: 1;
+  color: #fff; }
+
+/* line 70, ../sass/_navbar.scss */
+.menu-is-open {
+  transform: translateY(0px); }
+
+/* line 73, ../sass/_navbar.scss */
+.nav_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 76, ../sass/_navbar.scss */
+.tIcons_button {
+  color: inherit; }
+
+/* line 82, ../sass/_navbar.scss */
+.svga:hover {
+  text-decoration: none; }
+
+/* line 88, ../sass/_navbar.scss */
+.team, .price, .port {
+  opacity: 0; }
+
+/* line 96, ../sass/_navbar.scss */
+.tIcons svg {
+  fill: #333;
+  transition-duration: 0.4s; }
+
+/* line 100, ../sass/_navbar.scss */
+a.tIcons {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.25em;
+  position: relative; }
+
+/* line 106, ../sass/_navbar.scss */
+a.tIcons svg {
+  width: 100%;
+  display: block;
+  position: absolute;
+  transition-duration: 0.4s; }
+
+/* line 112, ../sass/_navbar.scss */
+a.tIcons svg:first-child {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+
+/* line 119, ../sass/_navbar.scss */
+a.tIcons svg:last-child {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
+/* line 129, ../sass/_navbar.scss */
+a.tIcons.toggle svg:first-child {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0); }
+
+/* line 134, ../sass/_navbar.scss */
+a.tIcons.toggle svg:last-child {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+/* line 139, ../sass/_navbar.scss */
+a.tIcons.tRotate svg:last-child {
+  -webkit-transform: scale(0) rotate(0deg);
+  -ms-transform: scale(0) rotate(0deg);
+  transform: scale(0) rotate(0deg); }
+
+/* line 144, ../sass/_navbar.scss */
+a.tIcons.tRotate.toggle svg:last-child {
+  -webkit-transform: scale(1) rotate(-360deg);
+  -ms-transform: scale(1) rotate(-360deg);
+  transform: scale(1) rotate(-360deg); }
+
+/* line 1, ../sass/_contacts.scss */
+.contacts_form {
+  background: #171b1e none repeat scroll 0 0;
+  padding: 4em 0; }
+  /* line 4, ../sass/_contacts.scss */
+  .contacts_form form {
+    border: 0 none;
+    padding: 0;
+    vertical-align: baseline; }
+    /* line 8, ../sass/_contacts.scss */
+    .contacts_form form li {
+      border: 0 none;
+      font-family: inherit; }
+  /* line 13, ../sass/_contacts.scss */
+  .contacts_form h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 52px;
+    font-weight: 300;
+    text-align: center; }
+  /* line 20, ../sass/_contacts.scss */
+  .contacts_form ul {
+    list-style: outside none none;
+    padding: 0; }
+  /* line 24, ../sass/_contacts.scss */
+  .contacts_form ul li:nth-child(1) {
+    margin-right: 3.6%; }
+  /* line 27, ../sass/_contacts.scss */
+  .contacts_form ul li:nth-child(1), .contacts_form ul li:nth-child(2) {
+    display: inline-block;
+    width: 48%; }
+  /* line 31, ../sass/_contacts.scss */
+  .contacts_form ul li:nth-child(1) input, .contacts_form ul li:nth-child(2) input {
+    width: 100%; }
+  /* line 34, ../sass/_contacts.scss */
+  .contacts_form ul li:nth-child(3) textarea {
+    margin-top: 50px;
+    min-height: 200px;
+    width: 100%; }
+  /* line 39, ../sass/_contacts.scss */
+  .contacts_form form input, .contacts_form form textarea {
+    background: transparent none repeat scroll 0 0;
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #444a4f;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 0.6em 0;
+    border-radius: 0; }
+  /* line 48, ../sass/_contacts.scss */
+  .contacts_form form input:focus, .contacts_form form textarea:focus {
+    outline: none; }
+  /* line 51, ../sass/_contacts.scss */
+  .contacts_form form input::-webkit-input-placeholder, .contacts_form form textarea::-webkit-input-placeholder {
+    color: #444a4f; }
+  /* line 54, ../sass/_contacts.scss */
+  .contacts_form form input:-moz-placeholder, .contacts_form form textarea:-moz-placeholder {
+    color: #444a4f; }
+  /* line 57, ../sass/_contacts.scss */
+  .contacts_form form input::-moz-placeholder, .contacts_form form textarea::-moz-placeholder {
+    color: #444a4f; }
+  /* line 60, ../sass/_contacts.scss */
+  .contacts_form form input:-ms-input-placeholder, .contacts_form form textarea:-ms-input-placeholder {
+    color: #444a4f; }
+  /* line 63, ../sass/_contacts.scss */
+  .contacts_form .required {
+    background: transparent url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld0JveD0iMCAwIDQgNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNCA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojQjQ1MjUyO30NCjwvc3R5bGU+DQo8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSIyIiBjeT0iMiIgcj0iMiIvPg0KPC9zdmc+DQo=") no-repeat scroll right top; }
+  /* line 67, ../sass/_contacts.scss */
+  .contacts_form textarea {
+    overflow-y: auto; }
+
+@media only screen and (max-width: 30em) {
+  /* line 74, ../sass/_contacts.scss */
+  form input, form textarea {
+    padding: .4em 0;
+    font-size: 16px; } }
+/* line 80, ../sass/_contacts.scss */
+.contacts_block_map {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  background: #fff none repeat scroll 0 0;
+  padding: 50px 40px;
+  overflow: hidden;
+  max-width: 350px; }
+  /* line 88, ../sass/_contacts.scss */
+  .contacts_block_map h1 {
+    text-align: center; }
+  /* line 91, ../sass/_contacts.scss */
+  .contacts_block_map_text {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%; }
+  /* line 99, ../sass/_contacts.scss */
+  .contacts_block_map_table td {
+    padding: 15px 0px; }
+
+/* line 2, ../sass/_buttons.scss */
+button.button-blob {
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  margin: 5% auto;
+  width: 15%;
+  cursor: pointer;
+  color: #8c8c8c;
+  background: transparent;
+  border: 1px solid rgba(64, 64, 64, 0.5);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5vw 1.5vw;
+  text-shadow: 1px 1px rgba(13, 12, 12, 0.3), 2px 2px rgba(13, 12, 12, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  z-index: 11; }
+
+/* line 21, ../sass/_buttons.scss */
+button.button-blob:hover {
+  color: rgba(38, 38, 38, 0.5); }
+
+/* line 24, ../sass/_buttons.scss */
+button.button-blob:focus {
+  color: #0d0d0d; }
+
+/* line 27, ../sass/_buttons.scss */
+.blob {
+  z-index: -1;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  margin-left: 0;
+  margin-top: 0;
+  background: #fbe151;
+  border-radius: 50%;
+  border-color: #fbe151;
+  border-width: 1px;
+  border-style: solid;
+  transition: border-width 0.7s ease-in-out,margin-left 0.7s ease-in-out,margin-top 0.7s ease-in-out; }
+
+/* line 41, ../sass/_buttons.scss */
+.expand {
+  border-color: #fbe151;
+  border-width: 300px;
+  border-style: solid;
+  transition: border-width 0.7s ease-in-out,margin-left 0.7s ease-in-out,margin-top 0.7s ease-in-out;
+  margin-left: -300px;
+  margin-top: -300px; }
+
+/* line 49, ../sass/_buttons.scss */
+.green {
+  border-color: #04ae5f; }
+
+/* line 52, ../sass/_buttons.scss */
+.pink {
+  border-color: #bd0f77; }
+
+/* line 12, ../sass/style.scss */
 .home_screen {
   height: 125vh;
   background-color: #fff;
   width: 100%;
   position: relative; }
 
-/* line 15, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .home_screen2 {
   height: 100vh;
   position: relative; }
 
-/* line 20, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .border {
   border-right: 1px solid #333;
   height: 100px;
   width: 100%; }
 
-/* line 25, ../sass/style.scss */
-.h1 {
-  position: absolute;
-  font-size: 68px;
-  color: #fff;
-  font-weight: 100;
-  opacity: 0;
-  text-align: center; }
+/* line 29, ../sass/style.scss */
+ul, ol {
+  margin: 0; }
 
 /* line 33, ../sass/style.scss */
 .h11 {
@@ -7318,152 +7696,22 @@ footer {
   .h14 span {
     color: #35334C; }
 
-/* line 52, ../sass/style.scss */
-nav {
-  background-color: transparent;
-  min-height: 90px;
-  line-height: 90px;
-  position: relative;
-  color: #333;
-  z-index: 30;
-  transition-duration: 0.1s; }
-  /* line 60, ../sass/style.scss */
-  nav ul {
-    padding: 0; }
-    /* line 63, ../sass/style.scss */
-    nav ul li {
-      display: inline-block;
-      list-style-type: none;
-      padding: 0 20px;
-      font-size: 18px;
-      font-weight: 300; }
-      /* line 69, ../sass/style.scss */
-      nav ul li a {
-        color: inherit; }
+/* line 51, ../sass/style.scss */
+input, textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
 
-/* line 75, ../sass/style.scss */
-.nav_white {
-  color: #fff; }
-
-/* line 79, ../sass/style.scss */
-.nav_w {
-  fill: #fff; }
-
-/* line 84, ../sass/style.scss */
-.nav_phone {
-  font-size: 22px;
-  font-weight: 700; }
-/* line 89, ../sass/style.scss */
-.nav_menu span {
-  padding: 0 5px 5px 0; }
-/* line 92, ../sass/style.scss */
-.nav_menu .tIcons {
-  padding-top: 3px; }
-
-/* line 97, ../sass/style.scss */
-.logo {
-  padding: 0 20px;
-  font-weight: 900;
-  font-size: 24px;
-  font-weight: 900; }
-
-/* line 103, ../sass/style.scss */
-.menu-expand {
-  backface-visibility: hidden;
-  background: rgba(2, 23, 37, 0.96) none repeat scroll 0 0;
-  height: 100%;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  top: 0;
-  transform: translateY(-100%);
-  transition-duration: 0.4s;
-  transition-property: transform;
-  width: 100%;
-  z-index: 1;
-  color: #fff; }
-
-/* line 119, ../sass/style.scss */
-.menu-is-open {
-  transform: translateY(0px); }
-
-/* line 122, ../sass/style.scss */
-.nav_content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-/* line 125, ../sass/style.scss */
-.tIcons_button {
-  color: inherit; }
-
-/* line 131, ../sass/style.scss */
-.svga:hover {
-  text-decoration: none; }
-
-/* line 137, ../sass/style.scss */
-.team, .price, .port {
-  opacity: 0; }
-
-/* line 145, ../sass/style.scss */
-.tIcons svg {
-  fill: #333;
-  transition-duration: 0.4s; }
-
-/* line 149, ../sass/style.scss */
-a.tIcons {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.25em;
-  position: relative; }
-
-/* line 155, ../sass/style.scss */
-a.tIcons svg {
-  width: 100%;
-  display: block;
-  position: absolute;
-  transition-duration: 0.4s; }
-
-/* line 161, ../sass/style.scss */
-a.tIcons svg:first-child {
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out; }
-
-/* line 168, ../sass/style.scss */
-a.tIcons svg:last-child {
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0); }
-
-/* line 178, ../sass/style.scss */
-a.tIcons.toggle svg:first-child {
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0); }
-
-/* line 183, ../sass/style.scss */
-a.tIcons.toggle svg:last-child {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
-
-/* line 188, ../sass/style.scss */
-a.tIcons.tRotate svg:last-child {
-  -webkit-transform: scale(0) rotate(0deg);
-  -ms-transform: scale(0) rotate(0deg);
-  transform: scale(0) rotate(0deg); }
-
-/* line 193, ../sass/style.scss */
-a.tIcons.tRotate.toggle svg:last-child {
-  -webkit-transform: scale(1) rotate(-360deg);
-  -ms-transform: scale(1) rotate(-360deg);
-  transform: scale(1) rotate(-360deg); }
+/* line 65, ../sass/style.scss */
+input[type="submit"], textarea[type="submit"] {
+  border: none;
+  cursor: pointer; }

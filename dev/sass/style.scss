@@ -2,6 +2,10 @@
 @import "mixins";
 @import "bootstrap";
 @import "footer";
+@import "google-maps";
+@import "navbar";
+@import "contacts";
+@import "buttons";
 @import "../libs/font-awesome/css/font-awesome.min.css";
 
 
@@ -22,14 +26,10 @@
 	height: 100px;
 	width: 100%;
 }
-.h1 {
-	position: absolute;	
-	font-size: 68px;
-	color: #fff;
-	font-weight: 100;
-	opacity: 0;
-	text-align: center;
-}
+ul, ol {
+    margin: 0;
+ }
+
 .h11 {
 	top: 56%;
 	left: 27%;
@@ -47,154 +47,29 @@
 		color: #35334C
 	}
 }
-//NAVBAR
 
-nav {
-	background-color:transparent;
-	min-height:90px;
-	line-height:90px;
-	position: relative;	
-	color:$navbar-color;
-	z-index: 30;
-	transition-duration: 0.1s;
-	ul {
-		padding: 0;		
-		//@include centerer(true, false);
-		li {
-			display: inline-block;
-			list-style-type: none;
-			padding: 0 20px;
-			font-size:18px;
-			font-weight:300;
-			a {
-				color: inherit;
-			}
-		}
-	}
+input, textarea {
+  font-family: $font-family-base;
+  font-size: 1.6rem;
+  font-weight: 300;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
-.nav_white {
-	color: #fff;
-	
+input[type="submit"], textarea[type="submit"] {
+  border: none;
+  cursor: pointer;
 }
-.nav_w {
-	
-	fill: #fff;
-}
-.nav {
-	&_phone {
-		font-size:22px;
-		font-weight:700;
-	}
-	&_menu {
-		span {
-			padding: 0 5px 5px 0;
-		}
-		.tIcons {
-			padding-top:3px;
-		}
-	}
-}
-.logo {
-	padding: 0 20px;
-	font-weight:900;
-	font-size:24px;
-	font-weight:900;
-}
-.menu-expand {
-	backface-visibility: hidden;
-    background: rgba(2, 23, 37, 0.96) none repeat scroll 0 0;
-    height: 100%;
-    left: 0;
-    overflow: auto;
-    position: fixed;
-    //text-align: center;
-    top: 0;
-    transform: translateY(-100%);
-    transition-duration: 0.4s;
-    transition-property: transform;
-    width: 100%;
-    z-index: 1;
-    color: #fff;
-}
-.menu-is-open {
-	transform: translateY(0px);
-}
-.nav_content {
-	@include centerer(true, true);
-}
-.tIcons_button {
-	color: inherit;
-}
-//NAVBAR
 
 
-.svga:hover {
-	text-decoration:none;
-}
-#lines {
-	//opacity: 0;
-}
-.team, .price, .port {
-	opacity: 0;
-}
-.mi {
 
-}
 
-//MENU_ICON
-.tIcons svg {
-	fill:$navbar-color;
-	transition-duration: 0.4s;
-}
-a.tIcons {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.25em;
-  position: relative;
-}
-a.tIcons svg {
-  width: 100%;
-  display: block;
-  position: absolute;
-  transition-duration: 0.4s;
-}
-a.tIcons svg:first-child {
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: 0.2s ease-in-out;
-          transition: 0.2s ease-in-out;
-}
-a.tIcons svg:last-child {
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: 0.2s ease-in-out;
-          transition: 0.2s ease-in-out;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-}
-a.tIcons.toggle svg:first-child {
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-}
-a.tIcons.toggle svg:last-child {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-a.tIcons.tRotate svg:last-child {
-  -webkit-transform: scale(0) rotate(0deg);
-      -ms-transform: scale(0) rotate(0deg);
-          transform: scale(0) rotate(0deg);
-}
-a.tIcons.tRotate.toggle svg:last-child {
-  -webkit-transform: scale(1) rotate(-360deg);
-      -ms-transform: scale(1) rotate(-360deg);
-          transform: scale(1) rotate(-360deg);
-}
-//MENU_ICON
+
 
 
