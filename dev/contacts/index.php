@@ -23,7 +23,7 @@ include("../blocks/navbar.php");
 					</span>
 				</td>
 		        <td class="contacts_block_map_text">
-		        	<span>600001, г.Владимир, ул. Дворянская 27а, корпус 1</span>
+		        	<span>600001, г.Владимир, <br> ул. Дворянская 27а, <br> корпус 1</span>
 		        </td>
 		    </tr>
 		    <tr>

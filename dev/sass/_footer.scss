@@ -1,22 +1,15 @@
 .footer {
-    //margin: 50px 0 0 0;
-    position: relative;
-    text-align: left;
-    color: #fff;
-    background-color: #171B1E;
-    
-    &_wrap {
-		padding: 0 30px 30px 30px;
-		
-    }
-    &_links {
-	    //@include gradient-horizontal(#1D3551, #3C6D7E, 0%, 100%);
-	    
-	    padding: 30px;
-	    //margin-top: -50px;
-	    &_h3 {
-	    	font-weight: 300;
-	    	font-size: 18px;
-	    }
-	}
+	background-color: #171B1E;
+	color: #fff;
+	padding: 30px 0;
+   &_phone {
+   	font-size: 24px;
+   	font-weight: 300;
+   	font-family: $font-family-cond;
+   }
+   &_h3 {
+   	font-family: $font-family-cond;
+   	font-weight: 700;
+   	font-size: 22px;
+   }
 }
