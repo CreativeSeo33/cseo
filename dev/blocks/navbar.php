@@ -18,7 +18,7 @@
 				
 		 	</div>
 			<div class="col-md-2">
-				<div class="nav_phone">+7 930 830-03-12</div>
+				<div class="nav_phone">+7 930 <span>830-03-12</span></div>
 			</div>
 			<div class="col-md-2 nav_menu">
 			  <div class="pull-right">
