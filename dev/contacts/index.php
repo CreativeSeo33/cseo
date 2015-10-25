@@ -18,8 +18,8 @@ include("../blocks/navbar.php");
 		        <div class="contacts_block_map_text">600001, г.Владимир,<br>ул. Дворянская 27а, корпус 1</div>
 		       
 		        <div class="contacts_block_map_text_phone">
-		        	+7 (4922) 600-312 <br>
-					+7 (930) 830-03-12
+		        	+7 4922 600-312 <br>
+					+7 930 830-03-12
 		        </div>
 		   
 		        <div class="contacts_block_map_text">
