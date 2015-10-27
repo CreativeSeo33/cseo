@@ -95,9 +95,13 @@ nav {
 .nav_content {
 	@include centerer(true, true);
 }
-.tIcons_button {
+.nav_menu a {
 	color: inherit;
 	font-size: 12px;
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+		color: inherit;
+	}
 }
 //NAVBAR
 

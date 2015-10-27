@@ -7470,38 +7470,42 @@ nav {
   transform: translate(-50%, -50%); }
 
 /* line 98, ../sass/_navbar.scss */
-.tIcons_button {
+.nav_menu a {
   color: inherit;
   font-size: 12px; }
+  /* line 101, ../sass/_navbar.scss */
+  .nav_menu a:hover, .nav_menu a:focus, .nav_menu a:active {
+    text-decoration: none;
+    color: inherit; }
 
-/* line 105, ../sass/_navbar.scss */
+/* line 109, ../sass/_navbar.scss */
 .svga:hover {
   text-decoration: none; }
 
-/* line 111, ../sass/_navbar.scss */
+/* line 115, ../sass/_navbar.scss */
 .team, .price, .port {
   opacity: 0; }
 
-/* line 119, ../sass/_navbar.scss */
+/* line 123, ../sass/_navbar.scss */
 .tIcons svg {
   fill: #333;
   transition-duration: 0.4s; }
 
-/* line 123, ../sass/_navbar.scss */
+/* line 127, ../sass/_navbar.scss */
 a.tIcons {
   display: inline-block;
   width: 1.5em;
   height: 1.25em;
   position: relative; }
 
-/* line 129, ../sass/_navbar.scss */
+/* line 133, ../sass/_navbar.scss */
 a.tIcons svg {
   width: 100%;
   display: block;
   position: absolute;
   transition-duration: 0.4s; }
 
-/* line 135, ../sass/_navbar.scss */
+/* line 139, ../sass/_navbar.scss */
 a.tIcons svg:first-child {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -7509,7 +7513,7 @@ a.tIcons svg:first-child {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
 
-/* line 142, ../sass/_navbar.scss */
+/* line 146, ../sass/_navbar.scss */
 a.tIcons svg:last-child {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -7520,25 +7524,25 @@ a.tIcons svg:last-child {
   -ms-transform: scale(0);
   transform: scale(0); }
 
-/* line 152, ../sass/_navbar.scss */
+/* line 156, ../sass/_navbar.scss */
 a.tIcons.toggle svg:first-child {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0); }
 
-/* line 157, ../sass/_navbar.scss */
+/* line 161, ../sass/_navbar.scss */
 a.tIcons.toggle svg:last-child {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
 
-/* line 162, ../sass/_navbar.scss */
+/* line 166, ../sass/_navbar.scss */
 a.tIcons.tRotate svg:last-child {
   -webkit-transform: scale(0) rotate(0deg);
   -ms-transform: scale(0) rotate(0deg);
   transform: scale(0) rotate(0deg); }
 
-/* line 167, ../sass/_navbar.scss */
+/* line 171, ../sass/_navbar.scss */
 a.tIcons.tRotate.toggle svg:last-child {
   -webkit-transform: scale(1) rotate(-360deg);
   -ms-transform: scale(1) rotate(-360deg);
