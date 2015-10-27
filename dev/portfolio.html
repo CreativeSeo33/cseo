@@ -5,6 +5,7 @@
 	<title>Creative Seo</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	
 
 </head>
 <body>
@@ -86,7 +87,7 @@
 <style>
 	body {overflow: hidden;}
 	.grid-sizer,
-	.grid-item { width: 25%; padding: 3px; position: relative;}
+	.grid-item { width: 25%; position: relative;}
 	/* 2 columns */
 	.grid-item--width2 { width: 50%; }
 	
@@ -97,17 +98,32 @@
   <div class="buffer"></div>
   <div class="grid">
   	  <div class="grid-sizer"></div>  	  
-	  <div class="grid-item">	
-	  	<div class="overlay"></div>
-	  	<img src="img/2.jpg" class="img-responsive">
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="img/2.jpg" class="img-responsive">
+	  		<div class="port_h1"><img src="img/logo-goldenhome.png" alt="" class="img-responsive"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
 	  </div>
-	  <div class="grid-item"><div class="overlay"></div><img src="img/3.jpg" ></div>
-	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><div class="overlay"></div><img src="img/3.jpg" ></div>
-	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="img/3.jpg" class="img-responsive">
+	  		<div class="port_h1"><img src="img/logo-goldenhome.png" alt="" class="img-responsive"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="img/2.jpg" class="img-responsive">
+	  		<div class="port_h1"><img src="img/logo-goldenhome.png" alt="" class="img-responsive"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item"><div class="overlay"><img src="img/3.jpg" class="img-responsive" ></div></div>
+	  <div class="grid-item"><div class="overlay"><img src="img/2.jpg" class="img-responsive"></div></div>
+	  <div class="grid-item"><div class="overlay"><img src="img/2.jpg" class="img-responsive"></div></div>
+	  <div class="grid-item"><div class="overlay"><img src="img/2.jpg" class="img-responsive"></div></div>
+	  <div class="grid-item"><div class="overlay"><img src="img/2.jpg" class="img-responsive"></div></div>
   </div>
 
 </div>
@@ -176,7 +192,7 @@
 					.setTween(tween)
 					//.setPin(".home_screen")
 					.triggerHook("onLeave")	
-					.addIndicators()
+					//.addIndicators()
 					.offset(-35)
 					.addTo(controller);
 </script>
