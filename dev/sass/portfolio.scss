@@ -1,0 +1,54 @@
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 140%;
+  //margin: 350px 0;
+  img {
+  	//padding:1px;
+  	width: 100%;
+  }
+}
+.buffer {
+	height: 90px;
+	width: 100%;
+}
+.grid-item img {
+    -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* W3C */
+	transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;   
+}
+.grid-item:hover img {
+	-webkit-filter: grayscale(0); /* Webkit */
+	    filter: none; /* IE6-9 */
+	    filter: grayscale(0); /* W3C */
+	    transform: scale(1.1);
+}
+.overlay {
+	margin: 3px;
+	overflow: hidden;
+	position: relative;	
+}
+.port_h1 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #fff;
+	opacity: 0;
+	width: 40%;
+	transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	@include centerer(true, true);
+}
+.grid-item:hover .port_h1 {
+	opacity: 1;
+}
+.port_h2 {
+	font-size: 24px;
+	font-weight: 300;
+	color: #fff;
+	bottom: 3%;
+	width: 100%;
+	text-align: center;
+	opacity: 1;	
+	@include centerer(true, false);
+}

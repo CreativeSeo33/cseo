@@ -7708,53 +7708,124 @@ button.button-blob:focus {
 .pink {
   border-color: #bd0f77; }
 
-/* line 12, ../sass/style.scss */
+/* line 1, ../sass/portfolio.scss */
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 140%; }
+  /* line 7, ../sass/portfolio.scss */
+  .content img {
+    width: 100%; }
+
+/* line 12, ../sass/portfolio.scss */
+.buffer {
+  height: 90px;
+  width: 100%; }
+
+/* line 16, ../sass/portfolio.scss */
+.grid-item img {
+  -webkit-filter: grayscale(1);
+  /* Webkit */
+  filter: gray;
+  /* IE6-9 */
+  filter: grayscale(1);
+  /* W3C */
+  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+
+/* line 22, ../sass/portfolio.scss */
+.grid-item:hover img {
+  -webkit-filter: grayscale(0);
+  /* Webkit */
+  filter: none;
+  /* IE6-9 */
+  filter: grayscale(0);
+  /* W3C */
+  transform: scale(1.1); }
+
+/* line 28, ../sass/portfolio.scss */
+.overlay {
+  margin: 3px;
+  overflow: hidden;
+  position: relative; }
+
+/* line 33, ../sass/portfolio.scss */
+.port_h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0;
+  width: 40%;
+  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 42, ../sass/portfolio.scss */
+.grid-item:hover .port_h1 {
+  opacity: 1; }
+
+/* line 45, ../sass/portfolio.scss */
+.port_h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+/* line 13, ../sass/style.scss */
 a {
   transition: all 0.25s ease-in 0s; }
 
-/* line 16, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .home_screen {
   height: 125vh;
   background-color: #fff;
   width: 100%;
   position: relative; }
 
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .home_screen2 {
   height: 100vh;
   position: relative; }
 
-/* line 28, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .border {
   border-right: 1px solid #333;
   height: 100px;
   width: 100%; }
 
-/* line 33, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 ul, ol {
   margin: 0; }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .h11 {
   top: 56%;
   left: 27%; }
 
-/* line 41, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .h12 {
   top: 36%;
   left: 50%; }
 
-/* line 45, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .h14 {
   top: 12%;
   left: 9%;
   color: #333;
   opacity: 1; }
-  /* line 50, ../sass/style.scss */
+  /* line 51, ../sass/style.scss */
   .h14 span {
     color: #35334C; }
 
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 input, textarea {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
@@ -7769,94 +7840,7 @@ input, textarea {
   -o-border-radius: 0;
   border-radius: 0; }
 
-/* line 69, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 input[type="submit"], textarea[type="submit"] {
   border: none;
   cursor: pointer; }
-
-/* line 76, ../sass/style.scss */
-.content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 140%; }
-  /* line 82, ../sass/style.scss */
-  .content img {
-    width: 100%; }
-
-/* line 87, ../sass/style.scss */
-.buffer {
-  height: 90px;
-  width: 100%; }
-
-/* line 91, ../sass/style.scss */
-.grid-item img {
-  -webkit-filter: grayscale(1);
-  /* Webkit */
-  filter: gray;
-  /* IE6-9 */
-  filter: grayscale(1);
-  /* W3C */
-  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
-
-/* line 97, ../sass/style.scss */
-.grid-item:hover img {
-  -webkit-filter: grayscale(0);
-  /* Webkit */
-  filter: none;
-  /* IE6-9 */
-  filter: grayscale(0);
-  /* W3C */
-  transform: scale(1.1); }
-
-/*.overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
-	opacity: 0;
-	transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, background 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-	pointer-events: none;
-	padding: 3px;
-}
-.grid-item:hover .overlay {
-	opacity: 0.3;
-}*/
-/* line 120, ../sass/style.scss */
-.overlay {
-  margin: 3px;
-  overflow: hidden;
-  position: relative; }
-
-/* line 125, ../sass/style.scss */
-.port_h1 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #fff;
-  opacity: 0;
-  width: 40%;
-  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-/* line 134, ../sass/style.scss */
-.grid-item:hover .port_h1 {
-  opacity: 1; }
-
-/* line 137, ../sass/style.scss */
-.port_h2 {
-  font-size: 24px;
-  font-weight: 300;
-  color: #fff;
-  bottom: 3%;
-  width: 100%;
-  text-align: center;
-  opacity: 1;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0); }
