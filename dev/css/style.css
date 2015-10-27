@@ -7710,7 +7710,7 @@ button.button-blob:focus {
 
 /* line 12, ../sass/style.scss */
 a {
-  transition: all 0.25s ease-out 0s; }
+  transition: all 0.25s ease-in 0s; }
 
 /* line 16, ../sass/style.scss */
 .home_screen {
@@ -7801,11 +7801,11 @@ input[type="submit"], textarea[type="submit"] {
 
 /* line 97, ../sass/style.scss */
 .grid-item:hover img {
-  -webkit-filter: grayscale(0.3);
+  -webkit-filter: grayscale(0);
   /* Webkit */
   filter: none;
   /* IE6-9 */
-  filter: grayscale(0.3);
+  filter: grayscale(0);
   /* W3C */
   transform: scale(1.1); }
 
