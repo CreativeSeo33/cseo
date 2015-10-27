@@ -95,9 +95,9 @@ input[type="submit"], textarea[type="submit"] {
 	transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;   
 }
 .grid-item:hover img {
-	-webkit-filter: grayscale(0.3); /* Webkit */
+	-webkit-filter: grayscale(0); /* Webkit */
 	    filter: none; /* IE6-9 */
-	    filter: grayscale(0.3); /* W3C */
+	    filter: grayscale(0); /* W3C */
 	    transform: scale(1.1);
 }
 /*.overlay {
