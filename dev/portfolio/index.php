@@ -123,6 +123,14 @@ include("../blocks/navbar.php");
 	  percentPosition: true
 	});
 //Masonry
+$(document).ready(function() {	
+    $('.tIcons').click(function() {
+    TweenMax.killAll(false, true, false);  
+   });
+    $('.tIcons_button').click(function() {
+    TweenMax.killAll(false, true, false);  
+   });
+});
 
 	var controller = new ScrollMagic.Controller();
 		var tween = new TimelineMax()
@@ -135,5 +143,6 @@ include("../blocks/navbar.php");
 					//.addIndicators()
 					.offset(-35)
 					.addTo(controller);
+	
 </script>
 <?php include("../blocks/footer_bottom.php"); ?>
