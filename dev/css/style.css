@@ -7396,8 +7396,8 @@ nav {
         text-transform: uppercase;
         transition: 0.3s ease;
         text-decoration: none;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
         padding: 30px 0; }
         /* line 28, ../sass/_navbar.scss */
         nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
@@ -7775,44 +7775,16 @@ input[type="submit"], textarea[type="submit"] {
   cursor: pointer; }
 
 /* line 76, ../sass/style.scss */
-.portfolio {
-  padding: 0 30px;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-/* line 81, ../sass/style.scss */
-.portfolio_title {
-  font-weight: 700;
-  font-size: 18px;
-  padding: 20px 0 8px 0;
-  text-transform: uppercase; }
-
-/* line 88, ../sass/style.scss */
-.da-thumbs {
-  position: relative;
-  overflow: hidden; }
-  /* line 91, ../sass/style.scss */
-  .da-thumbs img {
-    width: 100%; }
-  /* line 95, ../sass/style.scss */
-  .da-thumbs div span {
-    opacity: 0.9;
-    font-weight: 100;
-    font-size: 26px;
-    color: #fff; }
-  /* line 101, ../sass/style.scss */
-  .da-thumbs div > span {
-    font-size: 28px;
-    font-weight: 300;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-
-/* line 109, ../sass/style.scss */
-.da-thumbs div {
-  background: rgba(75, 75, 75, 0.7) none repeat scroll 0 0;
-  height: 100%;
+.content {
   position: absolute;
+  left: 0;
+  top: 0;
+  width: 140%; }
+  /* line 82, ../sass/style.scss */
+  .content img {
+    width: 100%; }
+
+/* line 87, ../sass/style.scss */
+.buffer {
+  height: 90px;
   width: 100%; }

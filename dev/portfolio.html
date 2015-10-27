@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Creative Seo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="logo">
+					CreativeSeo
+				</div>
+			</div>
+			<div class="col-md-6">
+				
+				<ul class="pull-right">
+					<li><a href="">Продвижение</a></li>
+					<li><a href="">Создание</a></li>
+					<li><a href="">Наша команда</a></li>
+					<li><a href="">Портфолио</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+				
+		 	</div>
+			<div class="col-md-2">
+				<div class="nav_phone">+7 930 <span>830-03-12</span></div>
+			</div>
+			<div class="col-md-2 nav_menu">
+			  <div class="pull-right">
+				<span>
+					<a href="" class="tIcons_button">МЕНЮ</a>
+				</span>
+				<a class="tIcons" href="#">
+				    <!-- Gallery Icon -->
+				    <svg class="mi" viewBox="0 0 36 30">
+				      <style>
+				      	.mi rect {
+				      		fill:#333;
+				      	}
+				      </style>
+				      <rect x="3" width="8" height="8"/>
+				      <rect x="14" width="8" height="8"/>
+				      <rect x="25" width="8" height="8"/>
+				      <rect x="3" y="11" width="8" height="8"/>
+				      <rect x="14" y="11" width="8" height="8"/>
+				      <rect x="25" y="11" width="8" height="8"/>
+				      <rect x="3" y="22" width="8" height="8"/>
+				      <rect x="14" y="22" width="8" height="8"/>
+				      <rect x="25" y="22" width="8" height="8"/>
+				    </svg>
+				    <!-- Close Icon -->
+				    <svg class="mi2" viewBox="0 0 36 30">
+				      <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+				    </svg>				  
+				</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	
+
+</nav>
+<div class="menu-expand">
+	<div class="container">
+			<div class="row nav_content">
+				<div class="col-md-4">
+					<h1>Меню Меню Меню</h1>
+				</div>
+				<div class="col-md-4">
+					<h1>Меню Меню Меню</h1>
+				</div>
+				<div class="col-md-4">
+					<h1>Меню Меню Меню</h1>
+				</div>
+			</div>
+		</div>	
+</div>
+
+<style>
+	body {overflow: hidden}
+	.grid-sizer,
+	.grid-item { width: 25%; padding: 3px;}
+	/* 2 columns */
+	.grid-item--width2 { width: 50%; }
+	
+
+</style>
+<div class="content">
+  
+  <div class="buffer"></div>
+  <div class="grid">
+  	  <div class="grid-sizer"></div>  	  
+	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><img src="img/3.jpg" ></div>
+	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><img src="img/3.jpg" ></div>
+	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
+  </div>
+
+</div>
+
+
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<script src="libs/gsap/TweenMax.min.js"></script>
+<script src="libs/scrollmagic/ScrollMagic.js"></script>
+<script src="libs/scrollmagic/animation.gsap.js"></script>
+<script src="libs/scrollmagic/debug.addIndicators.js"></script>
+<script src="js/jquery.smoothscroll.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+
+<script>
+	$(document).ready(function() {
+  
+  var winW = $(window).innerWidth(),
+      winH = $(window).innerHeight(),
+      padding = 30, //so that the user doesn't have to move their mouse ALL the way up/down/left/right to see the edges of the image. Make it whatever you want. 
+      $cont = $(".content"),
+      contW = $cont.width(),
+      contH = $cont.height(),
+      difW = contW - winW,
+      difH = contH - winH;
+  
+    var moveContent = function(e) {
+      var x = (e.pageX - padding) / (winW - 2 * padding),
+          y = (e.pageY - padding) / (winH - 2 * padding);
+      if (x < 0) {
+        x = 0;
+      } else if (x > 1) {
+        x = 1;
+      }
+      if (y < 0) {
+        y = 0;
+      } else if (y > 1) {
+        y = 1;
+      }
+      TweenMax.to($cont, 0.5, {x:difW * -x, y:difH * -y, ease:Power2.easeOut, overwrite:true});    
+    };
+
+  $("body").on("mousemove", moveContent);
+    
+});
+
+</script>
+
+<script src="js/masonry.pkgd.min.js"></script>
+<script>
+	$('.grid').masonry({
+	  // set itemSelector so .grid-sizer is not used in layout
+	  itemSelector: '.grid-item',
+	  // use element for option
+	  columnWidth: '.grid-sizer',
+	 
+	  percentPosition: true
+	})
+</script>
+</body>
+</html>
