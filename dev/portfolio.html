@@ -84,9 +84,9 @@
 </div>
 
 <style>
-	body {overflow: hidden}
+	body {overflow: hidden;}
 	.grid-sizer,
-	.grid-item { width: 25%; padding: 3px;}
+	.grid-item { width: 25%; padding: 3px; position: relative;}
 	/* 2 columns */
 	.grid-item--width2 { width: 50%; }
 	
@@ -97,14 +97,17 @@
   <div class="buffer"></div>
   <div class="grid">
   	  <div class="grid-sizer"></div>  	  
-	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><img src="img/3.jpg" ></div>
-	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><img src="img/3.jpg" ></div>
-	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
-	  <div class="grid-item"><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item">	
+	  	<div class="overlay"></div>
+	  	<img src="img/2.jpg" class="img-responsive">
+	  </div>
+	  <div class="grid-item"><div class="overlay"></div><img src="img/3.jpg" ></div>
+	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><div class="overlay"></div><img src="img/3.jpg" ></div>
+	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
+	  <div class="grid-item"><div class="overlay"></div><img src="img/2.jpg" class="img-responsive"></div>
   </div>
 
 </div>
@@ -163,6 +166,19 @@
 	 
 	  percentPosition: true
 	})
+</script>
+<script>
+	var controller = new ScrollMagic.Controller();
+		var tween = new TimelineMax()
+		//.add(TweenMax.to("body", 0.1, {backgroundColor: "#000", ease:Linear.easeNone}))
+		.add(TweenMax.to("nav", 0.01, {color: "#fff", ease:Linear}),0);
+		var scene = new ScrollMagic.Scene({triggerElement: ".grid", duration: 0, tweenChanges: true})
+					.setTween(tween)
+					//.setPin(".home_screen")
+					.triggerHook("onLeave")	
+					.addIndicators()
+					.offset(-35)
+					.addTo(controller);
 </script>
 </body>
 </html>
