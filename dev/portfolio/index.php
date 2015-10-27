@@ -7,13 +7,6 @@ include("../blocks/navbar.php");
 
 <style>
 	body {overflow: hidden;}
-	
-	.grid-sizer,
-	.grid-item { width: 25%; position: relative;}
-	/* 2 columns */
-	.grid-item--width2 { width: 50%; }
-	
-
 </style>
 
 
