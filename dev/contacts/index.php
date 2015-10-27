@@ -49,7 +49,9 @@ include("../blocks/navbar.php");
 
 
 <?php include("../blocks/footer.php"); ?>
-<?php 
-$script = '<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl-EDTJ5_uU3zBIX7-wNTu-qSZr1DO5Dw"></script><script src="/js/gmaps.js"></script>';
-?>
 <?php include("../blocks/footer_meta.php"); ?>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl-EDTJ5_uU3zBIX7-wNTu-qSZr1DO5Dw"></script><script src="/js/gmaps.js"></script>
+
+
+<?php include("../blocks/footer_bottom.php"); ?>

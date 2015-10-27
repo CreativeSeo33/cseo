@@ -1,226 +1,146 @@
-<?php include("../blocks/meta.php"); ?>
-
-<?php include("../blocks/navbar.php"); ?>
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="container">
-			<div class="row">
-				<h1>Портфолио</h1>
-			</div>
-		</div>
-	</div>
-	<!-- ROW 1 -->
-	<div class="row portfolio">
+<?php
+include("var.php");
+include("../blocks/meta.php");
+include("../blocks/navbar.php"); 
+?>
 
 
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/goldenhome.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="/portfolio/golden-home/" title="Подробнее">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-search-plus fa-stack-1x"></i>
-							</span>
-						</a>
-						<a href="http://www.sk-goldenhome.ru/" title="Перейти на сайт Golden Home" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Строительная компания Golden Home</div>
-			<div>Корпоративный сайт</div>
-		</div>
-
-
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/kluch585.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="/portfolio/kluch585/" title="Подробнее">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-search-plus fa-stack-1x"></i>
-							</span>
-						</a>
-						<a href="http://www.kluch585.ru/" title="Перейти на сайт Ключ 585" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Строительная компания Ключ 585</div>
-			<div>Корпоративный сайт</div>
-		</div>
-
-
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/lustragus.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="/portfolio/lustra-gus/" title="Подробнее">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-search-plus fa-stack-1x"></i>
-							</span>
-						</a>
-						<a href="http://www.lustra-gus.ru/" title="Перейти на сайт Люкс Свет" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Интернет-магазин "Люкс Свет"</div>
-			<div>Интернет-магазин</div>
-		</div>
-
-
-	</div>
-	<!-- ROW 1 -->
-
-	<!-- ROW 2 -->
-	<div class="row portfolio">
-		
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/ocenim33.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="/portfolio/ocenim33/" title="Подробнее">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-search-plus fa-stack-1x"></i>
-							</span>
-						</a>
-						<a href="http://www.ocenim33.ru/" title="Перейти на сайт Агентство права и оценки" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Агентство права и оценки</div>
-			<div>Корпоративный сайт</div>
-		</div>
-
-
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/smp.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="http://www.смп-245.рф/" title="Перейти на сайт СМП-245" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Строительная компания СМП-245</div>
-			<div>Корпоративный сайт</div>
-		</div>
-
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/kaprize.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="http://www.kaprize-moda.ru/" title="Перейти на сайт Капризе" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Производитель женской одежды "Капризе"</div>
-			<div>Корпоративный сайт</div>
-		</div>
-
-
-	</div>
-	<!-- ROW 2 -->
-	<!-- ROW 3 -->
-	<div class="row portfolio">
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/patent33.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="http://www.patent33.ru/" title="Перейти на сайт Патент 33" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Патентное бюро Патент 33</div>
-			<div>Корпоративный сайт</div>
-		</div>
-
-
+<style>
+	body {overflow: hidden;}
 	
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/gazoblok37.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="http://www.gazoblok37.ru/" title="Перейти на сайт Газоблок 37" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Официальный дистрибьютор Ytong</div>
-			<div>Корпоративный сайт</div>
-		</div>
+	.grid-sizer,
+	.grid-item { width: 25%; position: relative;}
+	/* 2 columns */
+	.grid-item--width2 { width: 50%; }
+	
 
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-			<div class="da-thumbs">
-				<img src="../img/portfolio/expert.jpg" alt="" class="img-responsive">
-				<div>
-					<span>
-						<a href="http://www.expert-ocenka33.ru/" title="Перейти на сайт Бюро оценки" rel="nofolow" target="_blank">
-							<span class="fa-stack fa-lg">
-								<i class="fa fa-circle-thin fa-stack-2x"></i>
-								<i class="fa fa-link fa-stack-1x"></i>
-							</span>
-						</a>
-					</span>
-				</div>
-			</div>
-			<div class="portfolio_title">Бюро независимой оценки</div>
-			<div>Корпоративный сайт</div>
-		</div>
+</style>
 
-	</div>
-	<!-- ROW 3-->
+
+<div class="content">
+  
+  <div class="buffer"></div>
+  <div class="grid">
+  	  <div class="grid-sizer"></div>  	  
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="/img/2.jpg" class="img-responsive">
+	  		<div class="port_h1"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="/img/3.jpg" class="img-responsive">
+	  		<div class="port_h1"><img src="/img/logo-goldenhome.png" alt="" class="img-responsive"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="/img/4.jpg" class="img-responsive">
+	  		<div class="port_h1"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item"><div class="overlay"><img src="/img/5.jpg" class="img-responsive" ></div></div>
+	  
+	  <div class="grid-item"><div class="overlay"><img src="/img/2.jpg" class="img-responsive"></div></div>
+
+	  <div class="grid-item"><div class="overlay"><img src="/img/2.jpg" class="img-responsive"></div></div>
+
+	  <div class="grid-item"><div class="overlay"><img src="/img/2.jpg" class="img-responsive"></div></div>
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="/img/6.jpg" class="img-responsive">
+	  		<div class="port_h1"><img src="/img/logo-goldenhome.png" alt="" class="img-responsive"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="/img/2.jpg" class="img-responsive">
+	  		<div class="port_h1"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="/img/3.jpg" class="img-responsive">
+	  		<div class="port_h1"><img src="/img/logo-goldenhome.png" alt="" class="img-responsive"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item">
+	  	<div class="overlay">
+	  		<img src="/img/4.jpg" class="img-responsive">
+	  		<div class="port_h1"></div>
+	  		<div class="port_h2">Строительная компания Golden Home</div>
+	  	</div>
+	  </div>
+	  <div class="grid-item"><div class="overlay"><img src="/img/5.jpg" class="img-responsive" ></div></div>
+  </div>
+
 </div>
 
-<?php include("../blocks/footer.php"); ?>
+
 <?php include("../blocks/footer_meta.php"); ?>
+<script src="/js/isotope.pkgd.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+  
+  var winW = $(window).innerWidth(),
+      winH = $(window).innerHeight(),
+      padding = 30, //so that the user doesn't have to move their mouse ALL the way up/down/left/right to see the edges of the image. Make it whatever you want. 
+      $cont = $(".content"),
+      contW = $cont.width(),
+      contH = $cont.height(),
+      difW = contW - winW,
+      difH = contH - winH;
+  
+    var moveContent = function(e) {
+      var x = (e.pageX - padding) / (winW - 2 * padding),
+          y = (e.pageY - padding) / (winH - 2 * padding);
+      if (x < 0) {
+        x = 0;
+      } else if (x > 1) {
+        x = 1;
+      }
+      if (y < 0) {
+        y = 0;
+      } else if (y > 1) {
+        y = 1;
+      }
+      TweenMax.to($cont, 0.5, {x:difW * -x, y:difH * -y, ease:Power2.easeOut, overwrite:true});    
+    };
+
+  $("body").on("mousemove", moveContent);
+    
+});
+
+//Masonry
+	$('.grid').masonry({
+	  // set itemSelector so .grid-sizer is not used in layout
+	  itemSelector: '.grid-item',
+	  // use element for option
+	  columnWidth: '.grid-sizer',
+	 
+	  percentPosition: true
+	});
+//Masonry
+
+	var controller = new ScrollMagic.Controller();
+		var tween = new TimelineMax()
+		.add(TweenMax.to(".mi rect", 0.18, {fill: "#fff", ease:Linear}),0)
+		.add(TweenMax.to("nav", 0.01, {color: "#fff", ease:Linear}),0);
+		var scene = new ScrollMagic.Scene({triggerElement: ".grid", duration: 0, tweenChanges: true})
+					.setTween(tween)
+					//.setPin(".home_screen")
+					.triggerHook("onLeave")	
+					//.addIndicators()
+					.offset(-35)
+					.addTo(controller);
+</script>
+<?php include("../blocks/footer_bottom.php"); ?>
