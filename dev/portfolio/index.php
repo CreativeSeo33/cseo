@@ -17,22 +17,22 @@ include("../blocks/navbar.php");
   	  <div class="grid-sizer"></div>  	  
 	  <div class="grid-item">
 	  	<div class="overlay">
-	  		<img src="/img/2.jpg" class="img-responsive">
-	  		<div class="port_h1"><img src="/img/logo-goldenhome.png" alt="" class="img-responsive"></div>
+	  		<img src="/img/2.jpg" class="img-responsive" alt="Логотип Golden Home">
+	  		<div class="port_h1"><img src="/img/logo-goldenhome.png" alt="Строительная компания Golden Home" class="img-responsive"></div>
 	  		<div class="port_h2">Строительная компания Golden Home</div>
 	  	</div>
 	  </div>
 	  <div class="grid-item">
 	  	<div class="overlay">
-	  		<img src="/img/3.jpg" class="img-responsive">
-	  		<div class="port_h1"><img src="/img/kluch_logo.png" alt="" class="img-responsive"></div>
+	  		<img src="/img/3.jpg" class="img-responsive" alt="Логотип Ключ 585">
+	  		<div class="port_h1"><img src="/img/kluch_logo.png" alt="Строительная компания Ключ 585" class="img-responsive"></div>
 	  		<div class="port_h2">Строительная компания Ключ 585</div>
 	  	</div>
 	  </div>
 	  <div class="grid-item">
 	  	<div class="overlay">
-	  		<img src="/img/4.jpg" class="img-responsive">
-	  		<div class="port_h1"><img src="/img/lustra_logo.png" alt="" class="img-responsive"></div>
+	  		<img src="/img/4.jpg" class="img-responsive" alt="Логотип Люкс Свет">
+	  		<div class="port_h1"><img src="/img/lustra_logo.png" alt="Интернет-магазин Люкс Свет" class="img-responsive"></div>
 	  		<div class="port_h2">Интернет-магазин Люкс Свет</div>
 	  	</div>
 	  </div>

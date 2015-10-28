@@ -7777,16 +7777,10 @@ button.button-blob:focus {
 
 /* line 24, ../sass/_portfolio.scss */
 .grid-item img {
-  -webkit-filter: grayscale(1);
-  filter: gray;
-  filter: grayscale(1);
   transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
 
 /* line 30, ../sass/_portfolio.scss */
 .grid-item:hover img {
-  -webkit-filter: grayscale(0);
-  filter: none;
-  filter: grayscale(0);
   transform: scale(1.1); }
 
 /* line 36, ../sass/_portfolio.scss */
