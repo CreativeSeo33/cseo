@@ -93,7 +93,35 @@ nav {
 	transform: translateY(0px);
 }
 .nav_content {
+	min-width: 45%;
 	@include centerer(true, true);
+	&_h2 {
+		font-size:20px;
+		min-width: 30%;
+		a {
+			color: #fff;
+			text-decoration: none;
+			&:focus,&:hover,&:active {
+				color: $gold;
+			}
+		}
+		
+	}
+	ul {
+		   	padding: 0;
+		   	li {
+		   		list-style-type: none;
+		   		a {
+		   			color: #fff;
+		   			font-size: 16px;
+		   			font-weight: 300;
+		   			line-height: 1.7em;
+		   			&:hover, &:hover, &:active {
+		   			color: $gold;
+		   		}
+		   		}
+		   	}
+		}
 }
 .nav_menu a {
 	color: inherit;

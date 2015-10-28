@@ -58,16 +58,36 @@
 </nav>
 <div class="menu-expand">
 	<div class="container">
-			<div class="row nav_content">
+			<div class="row">
+			<div class="nav_content">
 				<div class="col-md-4">
-					<h1>Меню Меню Меню</h1>
+					<div class="nav_content_h2"><a href="">Продвижение сайтов</a></div>
+					<ul>
+						<li><a href="">Продвижение интернет-магазина</a></li>
+						<li><a href="">Продвижение нового сайта</a></li>
+						<li><a href="">Seo аудит</a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
 				</div>
 				<div class="col-md-4">
-					<h1>Меню Меню Меню</h1>
+					<div class="nav_content_h2"><a href="">Создание сайтов</a></div>
+					<ul>
+						<li><a href="">Интернет-магазин</a></li>
+						<li><a href="">Корпоративный сайт</a></li>
+						<li><a href="">Сайт визитка</a></li>
+						<li><a href="">Создание контента</a></li>
+						<li><a href=""></a></li>
+					</ul>
 				</div>
 				<div class="col-md-4">
-					<h1>Меню Меню Меню</h1>
+					<div class="nav_content_h2"><a href="">Контекстная реклама</a></div>
+					<ul>
+						<li><a href="">Яндекс.Директ</a></li>
+						<li><a href="">Google Adwords</a></li>					
+					</ul>
 				</div>
+			</div>
 			</div>
 		</div>	
 </div>

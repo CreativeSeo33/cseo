@@ -7476,48 +7476,75 @@ nav {
 
 /* line 95, ../sass/_navbar.scss */
 .nav_content {
+  min-width: 45%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  /* line 98, ../sass/_navbar.scss */
+  .nav_content_h2 {
+    font-size: 20px;
+    min-width: 30%; }
+    /* line 101, ../sass/_navbar.scss */
+    .nav_content_h2 a {
+      color: #fff;
+      text-decoration: none; }
+      /* line 104, ../sass/_navbar.scss */
+      .nav_content_h2 a:focus, .nav_content_h2 a:hover, .nav_content_h2 a:active {
+        color: #FBC82B; }
+  /* line 110, ../sass/_navbar.scss */
+  .nav_content ul {
+    padding: 0; }
+    /* line 112, ../sass/_navbar.scss */
+    .nav_content ul li {
+      list-style-type: none; }
+      /* line 114, ../sass/_navbar.scss */
+      .nav_content ul li a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.7em; }
+        /* line 119, ../sass/_navbar.scss */
+        .nav_content ul li a:hover, .nav_content ul li a:hover, .nav_content ul li a:active {
+          color: #FBC82B; }
 
-/* line 98, ../sass/_navbar.scss */
+/* line 126, ../sass/_navbar.scss */
 .nav_menu a {
   color: inherit;
   font-size: 12px; }
-  /* line 101, ../sass/_navbar.scss */
+  /* line 129, ../sass/_navbar.scss */
   .nav_menu a:hover, .nav_menu a:focus, .nav_menu a:active {
     text-decoration: none;
     color: inherit; }
 
-/* line 109, ../sass/_navbar.scss */
+/* line 137, ../sass/_navbar.scss */
 .svga:hover {
   text-decoration: none; }
 
-/* line 115, ../sass/_navbar.scss */
+/* line 143, ../sass/_navbar.scss */
 .team, .price, .port {
   opacity: 0; }
 
-/* line 123, ../sass/_navbar.scss */
+/* line 151, ../sass/_navbar.scss */
 .tIcons svg {
   fill: #333;
   transition-duration: 0.4s; }
 
-/* line 127, ../sass/_navbar.scss */
+/* line 155, ../sass/_navbar.scss */
 a.tIcons {
   display: inline-block;
   width: 1.5em;
   height: 1.25em;
   position: relative; }
 
-/* line 133, ../sass/_navbar.scss */
+/* line 161, ../sass/_navbar.scss */
 a.tIcons svg {
   width: 100%;
   display: block;
   position: absolute;
   transition-duration: 0.4s; }
 
-/* line 139, ../sass/_navbar.scss */
+/* line 167, ../sass/_navbar.scss */
 a.tIcons svg:first-child {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -7525,7 +7552,7 @@ a.tIcons svg:first-child {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
 
-/* line 146, ../sass/_navbar.scss */
+/* line 174, ../sass/_navbar.scss */
 a.tIcons svg:last-child {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -7536,25 +7563,25 @@ a.tIcons svg:last-child {
   -ms-transform: scale(0);
   transform: scale(0); }
 
-/* line 156, ../sass/_navbar.scss */
+/* line 184, ../sass/_navbar.scss */
 a.tIcons.toggle svg:first-child {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0); }
 
-/* line 161, ../sass/_navbar.scss */
+/* line 189, ../sass/_navbar.scss */
 a.tIcons.toggle svg:last-child {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
 
-/* line 166, ../sass/_navbar.scss */
+/* line 194, ../sass/_navbar.scss */
 a.tIcons.tRotate svg:last-child {
   -webkit-transform: scale(0) rotate(0deg);
   -ms-transform: scale(0) rotate(0deg);
   transform: scale(0) rotate(0deg); }
 
-/* line 171, ../sass/_navbar.scss */
+/* line 199, ../sass/_navbar.scss */
 a.tIcons.tRotate.toggle svg:last-child {
   -webkit-transform: scale(1) rotate(-360deg);
   -ms-transform: scale(1) rotate(-360deg);
