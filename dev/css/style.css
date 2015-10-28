@@ -7248,62 +7248,63 @@ button.close {
     display: none !important; } }
 /* line 1, ../sass/_footer.scss */
 .footer {
-  background-color: #171B1E;
   color: #fff;
-  padding: 30px 0;
-  overflow: hidden; }
-  /* line 6, ../sass/_footer.scss */
+  overflow: hidden;
+  margin-top: 20px; }
+  /* line 7, ../sass/_footer.scss */
   .footer_phone {
     font-size: 24px;
     font-weight: 300;
     font-family: "Roboto Condensed", sans-serif;
     line-height: 1.6em; }
-  /* line 12, ../sass/_footer.scss */
+  /* line 13, ../sass/_footer.scss */
   .footer_time {
     font-size: 14px;
     color: #737373;
     line-height: 1.6em; }
-  /* line 17, ../sass/_footer.scss */
+  /* line 18, ../sass/_footer.scss */
   .footer_h3 {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 22px;
     padding-bottom: 10px; }
-    /* line 22, ../sass/_footer.scss */
+    /* line 23, ../sass/_footer.scss */
     .footer_h3 a {
       color: #fff;
       text-decoration: none; }
-      /* line 25, ../sass/_footer.scss */
+      /* line 26, ../sass/_footer.scss */
       .footer_h3 a:hover, .footer_h3 a:hover, .footer_h3 a:active {
         color: #FBC82B; }
-  /* line 30, ../sass/_footer.scss */
+  /* line 31, ../sass/_footer.scss */
   .footer ul {
     padding: 0; }
-    /* line 32, ../sass/_footer.scss */
+    /* line 33, ../sass/_footer.scss */
     .footer ul li {
       list-style-type: none; }
-      /* line 34, ../sass/_footer.scss */
+      /* line 35, ../sass/_footer.scss */
       .footer ul li a {
         color: #7b7b7b;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.7em; }
-        /* line 39, ../sass/_footer.scss */
+        /* line 40, ../sass/_footer.scss */
         .footer ul li a:hover, .footer ul li a:hover, .footer ul li a:active {
           color: #FBC82B; }
-  /* line 45, ../sass/_footer.scss */
+  /* line 46, ../sass/_footer.scss */
   .footer_copyright {
     font-size: 16px;
     font-weight: 300;
     padding: 10px 0; }
 
-/* line 51, ../sass/_footer.scss */
+/* line 52, ../sass/_footer.scss */
 .footer__inner {
+  background-color: #171B1E;
+  padding: 30px 0;
   transition: transform .5s;
   -moz-transform: ranslateY(100%);
   transform: translateY(100%); }
 
-/* line 58, ../sass/_footer.scss */
+/* line 60, ../sass/_footer.scss */
 .footer__inner--visible {
   -moz-transform: translateY(0);
   transform: translateY(0); }

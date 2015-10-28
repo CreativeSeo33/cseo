@@ -4,7 +4,12 @@ include("../blocks/meta.php");
 include("../blocks/navbar.php"); 
 ?>
 
-
+<style>
+	footer {
+		background-color: #171B1E;
+		margin-top: 0 !important;		
+	}	
+</style>
 
 
 
