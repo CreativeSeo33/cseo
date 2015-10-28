@@ -61,7 +61,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<div class="footer_copyright">© 2015, CreativeSeo</div>
+				<div class="footer_copyright">© 2015 CreativeSeo</div>
 			</div>			
 		</div>
 	</div>
