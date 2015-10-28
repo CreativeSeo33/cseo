@@ -7250,51 +7250,63 @@ button.close {
 .footer {
   background-color: #171B1E;
   color: #fff;
-  padding: 30px 0; }
-  /* line 5, ../sass/_footer.scss */
+  padding: 30px 0;
+  overflow: hidden; }
+  /* line 6, ../sass/_footer.scss */
   .footer_phone {
     font-size: 24px;
     font-weight: 300;
     font-family: "Roboto Condensed", sans-serif;
     line-height: 1.6em; }
-  /* line 11, ../sass/_footer.scss */
+  /* line 12, ../sass/_footer.scss */
   .footer_time {
     font-size: 14px;
     color: #737373;
     line-height: 1.6em; }
-  /* line 16, ../sass/_footer.scss */
+  /* line 17, ../sass/_footer.scss */
   .footer_h3 {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 22px;
     padding-bottom: 10px; }
-    /* line 21, ../sass/_footer.scss */
+    /* line 22, ../sass/_footer.scss */
     .footer_h3 a {
       color: #fff;
       text-decoration: none; }
-      /* line 24, ../sass/_footer.scss */
+      /* line 25, ../sass/_footer.scss */
       .footer_h3 a:hover, .footer_h3 a:hover, .footer_h3 a:active {
         color: #FBC82B; }
-  /* line 29, ../sass/_footer.scss */
+  /* line 30, ../sass/_footer.scss */
   .footer ul {
     padding: 0; }
-    /* line 31, ../sass/_footer.scss */
+    /* line 32, ../sass/_footer.scss */
     .footer ul li {
       list-style-type: none; }
-      /* line 33, ../sass/_footer.scss */
+      /* line 34, ../sass/_footer.scss */
       .footer ul li a {
         color: #7b7b7b;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.7em; }
-        /* line 38, ../sass/_footer.scss */
+        /* line 39, ../sass/_footer.scss */
         .footer ul li a:hover, .footer ul li a:hover, .footer ul li a:active {
           color: #FBC82B; }
-  /* line 44, ../sass/_footer.scss */
+  /* line 45, ../sass/_footer.scss */
   .footer_copyright {
     font-size: 16px;
     font-weight: 300;
     padding: 10px 0; }
+
+/* line 51, ../sass/_footer.scss */
+.footer__inner {
+  transition: transform .5s;
+  -moz-transform: ranslateY(100%);
+  transform: translateY(100%); }
+
+/* line 58, ../sass/_footer.scss */
+.footer__inner--visible {
+  -moz-transform: translateY(0);
+  transform: translateY(0); }
 
 @media only screen and (min-width: 768px) {
   /* line 2, ../sass/_google-maps.scss */

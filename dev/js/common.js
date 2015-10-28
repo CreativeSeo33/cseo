@@ -85,5 +85,42 @@ $('.button-blob').on('mouseleave', function(e){
 });
 //BUTTONS HOVER blob
 
+//FOOTER ANIMATION
 
-  
+  $(function() {
+
+	var $body = $("body");
+	var $window = $(window);
+	var $footerInner = $(".footer__inner");
+	var footerVisibleClass = "footer__inner--visible";
+	var footerIsHidden = true;
+	var footerTolerance = 150; //how many pixels from end to show the footer
+	var togglePont;
+	var windowHeight;
+	
+	$window.on("resize", function() {
+		togglePont = $body.height() - footerTolerance;
+		windowHeight = $window.height();
+	}).trigger("resize");
+	
+	$window.on("scroll", onScroll);
+
+	function onScroll() {
+		
+		var scrollBottom = windowHeight + $window.scrollTop();
+		if (scrollBottom >= togglePont) {
+			if (footerIsHidden) {
+				footerIsHidden = false;
+				$footerInner.addClass(footerVisibleClass);
+			}
+		} else {
+			if (!footerIsHidden) {
+				footerIsHidden = true;
+				$footerInner.removeClass(footerVisibleClass);
+			}
+		}
+		
+	} //end onScroll
+});
+
+//FOOTER ANIMATION

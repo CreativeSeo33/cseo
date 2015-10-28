@@ -1,4 +1,5 @@
 <footer class="footer">
+	<div class="footer__inner">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
@@ -63,5 +64,6 @@
 				<div class="footer_copyright">© 2015, CreativeSeo</div>
 			</div>			
 		</div>
+	</div>
 	</div>
 </footer>
