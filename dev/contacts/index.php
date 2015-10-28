@@ -29,6 +29,14 @@ include("../blocks/navbar.php");
 	
 	</div>
 </section>
+<!-- <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+			<img src="../img/schema.jpg" alt="" class="img-responsive">
+		</div>
+		<div class="col-md-6"></div>
+	</div>
+</div> -->
 
 <div class="contacts_form">s
 	<div class="container">
