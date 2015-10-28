@@ -12,8 +12,8 @@
 					<li><a href="">Продвижение</a></li>
 					<li><a href="">Создание</a></li>
 					<li><a href="">Наша команда</a></li>
-					<li><a href="">Портфолио</a></li>
-					<li><a href="">Контакты</a></li>
+					<li><a href="/portfolio/">Портфолио</a></li>
+					<li><a href="/contacts/">Контакты</a></li>
 				</ul>
 				
 		 	</div>

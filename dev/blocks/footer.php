@@ -47,7 +47,7 @@
 			</div>
 			<div class="col-md-3">
 				<ul>
-					<li><a href="">Портфолио</a></li>
+					<li><a href="/portfolio/">Портфолио</a></li>
 					<li><a href="">Прайс-лист</a></li>
 				</ul>
 			</div>
