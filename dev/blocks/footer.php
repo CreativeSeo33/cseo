@@ -13,7 +13,7 @@
 				<ul>
 					<li><a href="">Продвижение интернет-магазина</a></li>
 					<li><a href="">Продвижение нового сайта</a></li>
-					<li><a href="">Seo аудит</a></li>
+					<li><a href="/seo-audit/">Seo аудит</a></li>
 					<li><a href=""></a></li>
 					<li><a href=""></a></li>
 				</ul>

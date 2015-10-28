@@ -2,6 +2,7 @@
 
 $font-family-base: 'Roboto', sans-serif;
 $font-family-cond: 'Roboto Condensed', sans-serif;
+$font-size-base: 16px;
 
 // Scaffolding
 
@@ -42,3 +43,10 @@ $headings-line-height: 1.1 !default;
 $headings-color: inherit !default;
 
 // Typography
+
+//BREADCRUMBS
+
+$breadcrumb-bg: transparent;
+$breadcrumb-color: #333;
+
+//BREADCRUMBS

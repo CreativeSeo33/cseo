@@ -73,7 +73,9 @@ input[type="submit"], textarea[type="submit"] {
 }
 
 
-
+.breadcrumb a {
+	color: $breadcrumb-color;
+}
 
 
 
