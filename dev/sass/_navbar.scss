@@ -39,7 +39,14 @@ nav {
 
 .nav_white {
 	color: #fff;
-	
+	a {
+		&:hover, &:focus, &:active {
+   				color: #fff;
+   				border-top: 1px solid rgba(0,0,0,0);
+			    border-bottom: 1px solid rgba(0,0,0,0);
+			    text-decoration: none;
+   				}
+	}
 }
 .nav_w {
 	
@@ -52,6 +59,15 @@ nav {
 		float: right;
 		span {
 			font-weight:700;
+		}
+		&_mobile {
+			font-size:22px;
+			font-weight:300;
+			float:none;
+			text-align: center;
+			span {
+			font-weight:700;
+			}
 		}
 	}
 	&_menu {

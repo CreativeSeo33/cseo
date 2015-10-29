@@ -1,12 +1,12 @@
 <nav>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-md-2 col-xs-6">
 				<div class="logo">
 					CreativeSeo
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 hidden-xs">
 				
 				<ul class="pull-right">
 					<li><a href="">Продвижение</a></li>
@@ -17,10 +17,10 @@
 				</ul>
 				
 		 	</div>
-			<div class="col-md-2">
+			<div class="col-md-2 hidden-xs">
 				<div class="nav_phone">+7 930 <span>830-03-12</span></div>
 			</div>
-			<div class="col-md-2 nav_menu">
+			<div class="col-md-2 col-xs-6 nav_menu">
 			  <div class="pull-right">
 				<span>
 					<a href="" class="tIcons_button">МЕНЮ</a>
@@ -30,7 +30,10 @@
 				    <svg class="mi" viewBox="0 0 36 30">
 				      <style>
 				      	.mi rect {
-				      		fill:#333;
+				      		fill:#333;				      	
+				      	}
+				      	.mi2 polygon {
+				      		fill:#fbc82b;
 				      	}
 				      </style>
 				      <rect x="3" width="8" height="8"/>
@@ -50,6 +53,9 @@
 				</a>
 			  </div>
 			</div>
+			<div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+				<div class="nav_phone_mobile">+7 930 <span>830-03-12</span></div>
+			</div>
 		</div>
 	</div>
 
@@ -60,7 +66,7 @@
 	<div class="container">
 			<div class="row">
 			<div class="nav_content">
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-12">
 					<div class="nav_content_h2"><a href="">Продвижение сайтов</a></div>
 					<ul>
 						<li><a href="/prodvizhenie-internet-magazina/">Продвижение интернет-магазина</a></li>
@@ -70,7 +76,7 @@
 						<li><a href=""></a></li>
 					</ul>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-12">
 					<div class="nav_content_h2"><a href="">Создание сайтов</a></div>
 					<ul>
 						<li><a href="">Интернет-магазин</a></li>
@@ -80,7 +86,7 @@
 						<li><a href=""></a></li>
 					</ul>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-12">
 					<div class="nav_content_h2"><a href="">Контекстная реклама</a></div>
 					<ul>
 						<li><a href="">Яндекс.Директ</a></li>

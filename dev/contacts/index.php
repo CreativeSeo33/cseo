@@ -17,7 +17,7 @@ include("../blocks/navbar.php");
 	<div id="google-container"></div>
 	<div id="cd-zoom-in"></div>
 	<div id="cd-zoom-out"></div>	
-	<div class="contacts_block_map">
+	<div class="contacts_block_map hidden-xs">
 		<h1>Контакты</h1>
 		
 		        <div class="contacts_block_map_text">600001, г.Владимир,<br>ул. Дворянская 27а, корпус 1</div>
@@ -26,6 +26,11 @@ include("../blocks/navbar.php");
 		        	+7 4922 600-312 <br>
 					+7 930 830-03-12
 		        </div>
+
+		        <div class="contacts_block_map_text">
+		        	Время работы: <br>
+		        	9.00 - 18.00 ПН-ПТ
+ 		        </div>
 		   
 		        <div class="contacts_block_map_text">
 		        	<a href="mailto:info@creative-seo.ru.ru">info@creative-seo.ru</a>
@@ -43,7 +48,7 @@ include("../blocks/navbar.php");
 	</div>
 </div> -->
 
-<div class="contacts_form">s
+<div class="contacts_form hidden-xs">
 	<div class="container">
 		<div class="row">
 			<h2>Обратная связь</h2>

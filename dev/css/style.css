@@ -7423,30 +7423,45 @@ nav {
 /* line 40, ../sass/_navbar.scss */
 .nav_white {
   color: #fff; }
+  /* line 43, ../sass/_navbar.scss */
+  .nav_white a:hover, .nav_white a:focus, .nav_white a:active {
+    color: #fff;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    text-decoration: none; }
 
-/* line 44, ../sass/_navbar.scss */
+/* line 51, ../sass/_navbar.scss */
 .nav_w {
   fill: #fff; }
 
-/* line 49, ../sass/_navbar.scss */
+/* line 56, ../sass/_navbar.scss */
 .nav_phone {
   font-size: 22px;
   font-weight: 300;
   float: right; }
-  /* line 53, ../sass/_navbar.scss */
+  /* line 60, ../sass/_navbar.scss */
   .nav_phone span {
     font-weight: 700; }
-/* line 57, ../sass/_navbar.scss */
+  /* line 63, ../sass/_navbar.scss */
+  .nav_phone_mobile {
+    font-size: 22px;
+    font-weight: 300;
+    float: none;
+    text-align: center; }
+    /* line 68, ../sass/_navbar.scss */
+    .nav_phone_mobile span {
+      font-weight: 700; }
+/* line 73, ../sass/_navbar.scss */
 .nav_menu {
   padding: 0 25px; }
-  /* line 59, ../sass/_navbar.scss */
+  /* line 75, ../sass/_navbar.scss */
   .nav_menu span {
     padding: 0 5px 5px 0; }
-  /* line 62, ../sass/_navbar.scss */
+  /* line 78, ../sass/_navbar.scss */
   .nav_menu .tIcons {
     padding-top: 3px; }
 
-/* line 67, ../sass/_navbar.scss */
+/* line 83, ../sass/_navbar.scss */
 .logo {
   padding: 0 20px;
   font-weight: 900;
@@ -7454,7 +7469,7 @@ nav {
   font-weight: 900;
   color: inherit; }
 
-/* line 75, ../sass/_navbar.scss */
+/* line 91, ../sass/_navbar.scss */
 .menu-expand {
   backface-visibility: hidden;
   background: #171B1E none repeat scroll 0 0;
@@ -7471,81 +7486,81 @@ nav {
   z-index: 1;
   color: #fff; }
 
-/* line 92, ../sass/_navbar.scss */
+/* line 108, ../sass/_navbar.scss */
 .menu-is-open {
   transform: translateY(0px); }
 
-/* line 95, ../sass/_navbar.scss */
+/* line 111, ../sass/_navbar.scss */
 .nav_content {
   min-width: 45%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  /* line 98, ../sass/_navbar.scss */
+  /* line 114, ../sass/_navbar.scss */
   .nav_content_h2 {
     font-size: 20px;
     min-width: 30%; }
-    /* line 101, ../sass/_navbar.scss */
+    /* line 117, ../sass/_navbar.scss */
     .nav_content_h2 a {
       color: #fff;
       text-decoration: none; }
-      /* line 104, ../sass/_navbar.scss */
+      /* line 120, ../sass/_navbar.scss */
       .nav_content_h2 a:focus, .nav_content_h2 a:hover, .nav_content_h2 a:active {
         color: #FBC82B; }
-  /* line 110, ../sass/_navbar.scss */
+  /* line 126, ../sass/_navbar.scss */
   .nav_content ul {
     padding: 0; }
-    /* line 112, ../sass/_navbar.scss */
+    /* line 128, ../sass/_navbar.scss */
     .nav_content ul li {
       list-style-type: none; }
-      /* line 114, ../sass/_navbar.scss */
+      /* line 130, ../sass/_navbar.scss */
       .nav_content ul li a {
         color: #fff;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.7em; }
-        /* line 119, ../sass/_navbar.scss */
+        /* line 135, ../sass/_navbar.scss */
         .nav_content ul li a:hover, .nav_content ul li a:hover, .nav_content ul li a:active {
           color: #FBC82B; }
 
-/* line 126, ../sass/_navbar.scss */
+/* line 142, ../sass/_navbar.scss */
 .nav_menu a {
   color: inherit;
   font-size: 12px; }
-  /* line 129, ../sass/_navbar.scss */
+  /* line 145, ../sass/_navbar.scss */
   .nav_menu a:hover, .nav_menu a:focus, .nav_menu a:active {
     text-decoration: none;
     color: inherit; }
 
-/* line 137, ../sass/_navbar.scss */
+/* line 153, ../sass/_navbar.scss */
 .svga:hover {
   text-decoration: none; }
 
-/* line 143, ../sass/_navbar.scss */
+/* line 159, ../sass/_navbar.scss */
 .team, .price, .port {
   opacity: 0; }
 
-/* line 151, ../sass/_navbar.scss */
+/* line 167, ../sass/_navbar.scss */
 .tIcons svg {
   fill: #333;
   transition-duration: 0.4s; }
 
-/* line 155, ../sass/_navbar.scss */
+/* line 171, ../sass/_navbar.scss */
 a.tIcons {
   display: inline-block;
   width: 1.5em;
   height: 1.25em;
   position: relative; }
 
-/* line 161, ../sass/_navbar.scss */
+/* line 177, ../sass/_navbar.scss */
 a.tIcons svg {
   width: 100%;
   display: block;
   position: absolute;
   transition-duration: 0.4s; }
 
-/* line 167, ../sass/_navbar.scss */
+/* line 183, ../sass/_navbar.scss */
 a.tIcons svg:first-child {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -7553,7 +7568,7 @@ a.tIcons svg:first-child {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
 
-/* line 174, ../sass/_navbar.scss */
+/* line 190, ../sass/_navbar.scss */
 a.tIcons svg:last-child {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -7564,25 +7579,25 @@ a.tIcons svg:last-child {
   -ms-transform: scale(0);
   transform: scale(0); }
 
-/* line 184, ../sass/_navbar.scss */
+/* line 200, ../sass/_navbar.scss */
 a.tIcons.toggle svg:first-child {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0); }
 
-/* line 189, ../sass/_navbar.scss */
+/* line 205, ../sass/_navbar.scss */
 a.tIcons.toggle svg:last-child {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
 
-/* line 194, ../sass/_navbar.scss */
+/* line 210, ../sass/_navbar.scss */
 a.tIcons.tRotate svg:last-child {
   -webkit-transform: scale(0) rotate(0deg);
   -ms-transform: scale(0) rotate(0deg);
   transform: scale(0) rotate(0deg); }
 
-/* line 199, ../sass/_navbar.scss */
+/* line 215, ../sass/_navbar.scss */
 a.tIcons.tRotate.toggle svg:last-child {
   -webkit-transform: scale(1) rotate(-360deg);
   -ms-transform: scale(1) rotate(-360deg);
@@ -7683,7 +7698,7 @@ a.tIcons.tRotate.toggle svg:last-child {
     font-weight: 300;
     text-align: center;
     width: 100%;
-    padding: 20px 15px; }
+    padding: 15px 15px; }
     /* line 100, ../sass/_contacts.scss */
     .contacts_block_map_text_phone {
       font-size: 22px;
