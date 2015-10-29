@@ -63,8 +63,8 @@
 				<div class="col-md-4">
 					<div class="nav_content_h2"><a href="">Продвижение сайтов</a></div>
 					<ul>
-						<li><a href="">Продвижение интернет-магазина</a></li>
-						<li><a href="">Продвижение нового сайта</a></li>
+						<li><a href="/prodvizhenie-internet-magazina/">Продвижение интернет-магазина</a></li>
+						<li><a href="/prodvizhenie-novogo-sayta/">Продвижение нового сайта</a></li>
 						<li><a href="/seo-audit/">Seo аудит</a></li>
 						<li><a href=""></a></li>
 						<li><a href=""></a></li>
