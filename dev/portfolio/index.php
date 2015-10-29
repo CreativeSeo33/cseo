@@ -21,7 +21,7 @@ include("../blocks/navbar.php");
 	  	<div class="overlay">
 	  		<img src="/img/2.jpg" class="img-responsive" alt="Логотип Golden Home">
 	  		<div class="port_h1">
-	  			<img src="/img/logo-goldenhome.png" alt="Строительная компания Golden Home" class="img-responsive">
+	  			<img src="/img/logo-goldenhome.png" alt="Строительная компания Golden Home" class="img-responsive portfolio_logo">
 	  			<div class="port_h1_link">sk-goldenhome.ru</div>
 	  		</div>
 	  		<!-- <div class="port_h2">Строительная компания Golden Home</div> -->
@@ -31,8 +31,10 @@ include("../blocks/navbar.php");
 	  	<div class="overlay-black"></div>
 	  	<div class="overlay">
 	  		<img src="/img/3.jpg" class="img-responsive" alt="Логотип Ключ 585">
-	  		<div class="port_h1"><img src="/img/kluch_logo.png" alt="Строительная компания Ключ 585" class="img-responsive"></div>
-	  		<div class="port_h2">Строительная компания Ключ 585</div>
+	  		<div class="port_h1">
+	  			<img src="/img/kluch_logo.png" alt="Строительная компания Ключ 585" class="img-responsive portfolio_logo">
+	  			<div class="port_h1_link">kluch585.ru</div>
+	  		</div>
 	  	</div>
 	  </div>
 	  <div class="grid-item">
@@ -154,10 +156,6 @@ $(document).ready(function() {
 					//.addIndicators()
 					.offset(-35)
 					.addTo(controller);
-
-
-
-	
 </script>
 <script>
 /**
