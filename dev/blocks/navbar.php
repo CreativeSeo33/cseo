@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-2 col-xs-6">
 				<div class="logo">
-					CreativeSeo
+					<a href="/">CreativeSeo</a>	
 				</div>
 			</div>
 			<div class="col-md-6 hidden-xs">
