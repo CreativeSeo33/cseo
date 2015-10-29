@@ -42,20 +42,21 @@
 			</div>
 			<div class="col-md-3">
 				<ul>
-					<li><a href="">Телефония</a></li>
+					<li><a href="/nastroyka-telefonii/">Телефония</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3">
 				<ul>
 					<li><a href="/portfolio/">Портфолио</a></li>
-					<li><a href="">Прайс-лист</a></li>
+					<li><a href="/price-list/">Прайс-лист</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3">
 				<ul>
-					<li><a href="">Реквизиты</a></li>
+					<li><a href="/rekvizity/">Реквизиты</a></li>
 					<li><a href="/vacancies/">Вакансии</a></li>
-					<li><a href="">Блог</a></li>					
+					<li><a href="/about/">О нас</a></li>
+					<li><a href="/blog/">Блог</a></li>					
 				</ul>
 			</div>
 		</div>
