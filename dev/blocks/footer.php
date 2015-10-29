@@ -54,7 +54,7 @@
 			<div class="col-md-3">
 				<ul>
 					<li><a href="">Реквизиты</a></li>
-					<li><a href="">Вакансии</a></li>
+					<li><a href="/vacancies/">Вакансии</a></li>
 					<li><a href="">Блог</a></li>					
 				</ul>
 			</div>
