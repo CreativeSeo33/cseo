@@ -6002,10 +6002,12 @@ nav {
   .nav_menu .tIcons {
     padding-top: 3px; }
 
-.nav_home_page ul li a {
+.nav_home_page ul:first-child li a {
   color: #fff; }
-  .nav_home_page ul li a:hover, .nav_home_page ul li a:focus, .nav_home_page ul li a:active {
+  .nav_home_page ul:first-child li a:hover, .nav_home_page ul:first-child li a:focus, .nav_home_page ul:first-child li a:active {
     color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     text-decoration: none; }
 
 .nav_home_page .logo {
