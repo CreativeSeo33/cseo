@@ -6424,7 +6424,7 @@ button.button-blob:focus {
   opacity: 0.3;
   float: left;
   clear: left;
-  background: url(http://bit.ly/QtZ5XV) no-repeat;
+  background: url("/img/arrow.png") no-repeat;
   list-style: none;
   transition: all;
   -webkit-animation-iteration-count: infinite;
