@@ -1,5 +1,5 @@
 {
-  "name": "Grunt",
+  "name": "CreativeSeo",
   "version": "0.0.1",
   "devDependencies": {
     "grunt": "latest",
@@ -14,15 +14,9 @@
     "grunt-csso": "latest",
     "grunt-fixmyjs": "^0.3.0",
     "grunt-include-replace": "^3.0.0",
-    "grunt-newer": "latest",
-    "grunt-postcss": "latest",
     "grunt-processhtml": "latest",
-    "grunt-uncss": "^0.4.3",
+    "grunt-sass": "latest",
     "grunt-wiredep": "latest",
-    "time-grunt": "latest",
-    "grunt-uncss": "latest",
-    "grunt-postcss": "latest",
-    "grunt-sitemap": "latest",
-    "grunt-contrib-imagemin": "latest"
+    "load-grunt-tasks": "^3.3.0"
   }
 }

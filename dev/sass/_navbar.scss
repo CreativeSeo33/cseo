@@ -35,6 +35,7 @@ nav {
 			}
 		}
 	}
+
 }
 
 .nav_white {
@@ -77,6 +78,38 @@ nav {
 		}
 		.tIcons {
 			padding-top:3px;
+		}
+	}
+	&_home_page {
+		
+		ul {
+			li {
+				a {
+					color: $navbar-color-home-page;
+					&:hover, &:focus, &:active {
+		   				color: $navbar-color-home-page;
+		   				border-top: 1px solid rgba(255,255,255,0);
+					    border-bottom: 1px solid rgba(0,0,0,0);
+					    text-decoration: none;
+		   				}
+				}
+			}
+		}
+		.logo {
+			color: $navbar-color-home-page;
+		}
+		.nav_phone {
+			color: $navbar-color-home-page;
+		}
+		.tIcons_button {
+			color:$navbar-color-home-page;	
+			&:hover, &:focus, &:active {
+		   				color: $navbar-color-home-page;
+		   				text-decoration: none;
+		   				}		
+		}
+		.nav_menu a rect {
+			fill:$navbar-color-home-page;	
 		}
 	}
 }

@@ -1,4 +1,4 @@
-установить node, railsinstaller
+﻿установить node, railsinstaller
 обновить ruby, npm, bower
 npm install grunt-cli -g
 
@@ -15,6 +15,8 @@ bower install - установка пакетов Bower //скачивает п�
 dploy install - для связи с сервером
 
 dploy <name> - для закачки на сервер (при применении залить на github)
+
+Для установки libsass npm install --save-dev load-grunt-tasks
 
 compass watch
 

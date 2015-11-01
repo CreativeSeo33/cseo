@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-	
+require('load-grunt-tasks')(grunt);	
 grunt.initConfig({  
  
 	csso: {
@@ -66,16 +66,7 @@ grunt.initConfig({
 	  }
 	},
 
-	watch: {
-		html: {
-			files: ['*.html','*/*.html', '!dist/*.html', '!release/*.html'],
-			tasks: ['includereplace', 'processhtml']
-		},
-		css: {
-			files: ['css/*.css'],
-			tasks: ['cssmin']
-		}
-	},
+	
 
 	processhtml: {
 	  dev:{
@@ -97,47 +88,23 @@ grunt.initConfig({
 		options: {}
 	  }
 	},
-
-	critical: {
-		test: {
-			options: {
-				base: './',
-				css: ['prod/css/style.min.css'],
-				width: 1600,
-				height: 1500
-			},
-			files: [{                                   
-				expand: true,
-				cwd: 'prod/',
-				src: ['index.html'],
-				dest: 'prod/'
-			}]
+	sass: {
+        options: {
+            sourceMap: true
+        },
+        dist: {
+            files: {
+                'dev/css/style.css': 'dev/sass/style.scss'
+            }
+        }
+    },
+	watch: {
+		
+		css: {
+			files: ['**/*.scss'],
+			tasks: ['sass']
 		}
-	},
-
-	imagemin: {
-		dynamic: {
-		  files: [{
-			expand: true,
-			cwd: 'dev/',
-			src: ['**/*.{png,jpg,gif,JPG}','!libs/*.{png,jpg,gif,JPG}'],
-			dest: 'prod/'
-		  }]
-		}
-	},
-	postcss: {
-      options: {
-        processors: [
-          
-          require('cssgrace'),
-        ]
-      },
-      dist: {
-        src: ['prod/css/style.min.css'],
-        dest: 'prod/css/style.min.css'
-      }
-    }
-	
+	}
 
 });
 
@@ -149,21 +116,15 @@ grunt.initConfig({
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-include-replace');
     grunt.loadNpmTasks('grunt-processhtml');
-    grunt.loadNpmTasks('grunt-postcss');
+    
     grunt.loadNpmTasks('grunt-csso');
     grunt.loadNpmTasks('grunt-wiredep');
-    grunt.loadNpmTasks('grunt-critical');
+  
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-fixmyjs');
-    grunt.loadNpmTasks('grunt-uncss');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-csslint');
     
-    grunt.registerTask('default', ['postcss']);
-    grunt.registerTask('all', ['postcss']);
-    grunt.registerTask('css', ['csso', 'autoprefixer']);
-	grunt.registerTask('js', ['uglify']);
-	grunt.registerTask('php', ['copy', 'processhtml', 'htmlmin']);
-    grunt.registerTask('img', ['imagemin']);
+	grunt.loadNpmTasks('grunt-sass');
+	
+    grunt.registerTask('default', ['watch']);
 	  
 };
