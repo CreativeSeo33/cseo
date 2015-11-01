@@ -62,7 +62,8 @@
 	
 
 </nav>
-<div class="menu-expand">
+<div class="menu-expand" id="large-header">
+	<canvas id="demo-canvas2"></canvas>
 	<div class="container">
 			<div class="row">
 			<div class="nav_content">

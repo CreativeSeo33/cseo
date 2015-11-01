@@ -6007,8 +6007,6 @@ nav {
   color: #fff; }
   .nav_home_page ul li a:hover, .nav_home_page ul li a:focus, .nav_home_page ul li a:active {
     color: #fff;
-    border-top: 1px solid rgba(255, 255, 255, 0);
-    border-bottom: 1px solid transparent;
     text-decoration: none; }
 
 .nav_home_page .logo {
@@ -6381,6 +6379,9 @@ button.button-blob:focus {
   background-size: cover;
   background-position: center center;
   z-index: 1; }
+
+#demo-canvas2 {
+  max-width: 100%; }
 
 .main-title {
   position: absolute;

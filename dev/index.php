@@ -210,4 +210,5 @@ include("blocks/navbar.php");
 })();
 </script>
 
+
 <?php include("blocks/footer_bottom.php"); ?>

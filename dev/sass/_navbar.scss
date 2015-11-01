@@ -88,8 +88,8 @@ nav {
 					color: $navbar-color-home-page;
 					&:hover, &:focus, &:active {
 		   				color: $navbar-color-home-page;
-		   				border-top: 1px solid rgba(255,255,255,0);
-					    border-bottom: 1px solid rgba(0,0,0,0);
+		   				//border-top: 1px solid rgba(255,255,255,1);
+					    //border-bottom: 1px solid rgba(255,255,255,1);
 					    text-decoration: none;
 		   				}
 				}
